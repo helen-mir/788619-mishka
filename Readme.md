@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Елена Миронова](https://up.htmlacademy.ru/adaptive/15/user/788619).
-* Наставник: `Неизвестно`.
+* Наставник: [Сергей Кравченко](https://up.htmlacademy.ru/htmlcss/22/user/13921).
 
 ---
 
