@@ -40,7 +40,7 @@
     <main class="page-main">
 
       <section class="order">
-        <h2 class="order-form__title visually-hidden">Форма заказа</h2>
+        <h2 class="order__title visually-hidden">Форма заказа</h2>
         <p class="order_text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
         <form class="order__form order-form" method="get" action="https://echo.htmlacademy.ru">
           <fieldset class="order-form__group ">
@@ -48,7 +48,7 @@
               <h2 class="order-form__title">Тип</h2>
               <ul class="order-form__list radio-list">
                 <li class="radio-list__item">
-                  <input class="radio-list__input visually-hidden checked" type="radio" name="radio-item" id="acsessorize">
+                  <input class="radio-list__input visually-hidden" type="radio" name="radio-item" id="acsessorize" checked>
                   <label class="radio-list__label" for="acsessorize">Аксессуар для интерьера</label>
                 </li>
                 <li class="radio-list__item">
@@ -62,27 +62,27 @@
             <div class="order-form__wrapper">
               <h2 class="order-form__title">Цвет</h2>
               <ul class="order-form__list checkbox-list">
-                <li class="order-form__item checkbox-list__item">
-                  <input class="checkbox-list__input visually-hidden checked" type="checkbox" name="checkbox-item" id="white">
+                <li class="checkbox-list__item">
+                  <input class="checkbox-list__input visually-hidden" type="checkbox" name="checkbox-item" id="white" checked>
                   <label class="checkbox-list__label" for="white">Белый</label>
                 </li>
-                <li class="order-form__item checkbox-list__item">
-                  <input class="checkbox-list__input visually-hidden checked" type="checkbox" name="checkbox-item" id="gray">
+                <li class="checkbox-list__item">
+                  <input class="checkbox-list__input visually-hidden" type="checkbox" name="checkbox-item" id="gray" checked>
                   <label class="checkbox-list__label" for="gray">Серый</label>
                 </li>
-                <li class="order-form__item checkbox-list__item">
+                <li class="checkbox-list__item">
                   <input class="checkbox-list__input visually-hidden" type="checkbox" name="checkbox-item" id="tiffani">
                   <label class="checkbox-list__label" for="tiffani">«Тиффани»</label>
                 </li>
-                <li class="order-form__item checkbox-list__item">
+                <li class="checkbox-list__item">
                   <input class="checkbox-list__input visually-hidden" type="checkbox" name="checkbox-item" id="black">
                   <label class="checkbox-list__label" for="black">Черный</label>
                 </li>
-                <li class="order-form__item checkbox-list__item">
+                <li class="checkbox-list__item">
                   <input class="checkbox-list__input visually-hidden" type="checkbox" name="checkbox-item" id="pink">
                   <label class="checkbox-list__label" for="pink">Розовый</label>
                 </li>
-                <li class="order-form__item checkbox-list__item">
+                <li class="checkbox-list__item">
                   <input class="checkbox-list__input visually-hidden" type="checkbox" name="checkbox-item" id="orange">
                   <label class="checkbox-list__label" for="orange">Оранжевый</label>
                 </li>
@@ -93,15 +93,15 @@
             <div class="order-form__wrapper">
               <h2 class="order-form__title">Фио</h2>
               <ul class="order-form__list field-list">
-                <li class="order-form__item field-list__item">
+                <li class="field-list__item">
                   <label for="name" class="field-list__label">Имя:</label>
                   <input class="field-list__input" type="text" name="text-item" id="name" placeholder="Введите ваше имя*">
                 </li>
-                <li class="order-form__item field-list__item">
+                <li class="field-list__item">
                   <label for="surname" class="field-list__label">Фамилия:</label>
                   <input class="field-list__input" type="text" name="text-item" id="surname" placeholder="Укажите фамилию*">
                 </li>
-                <li class="order-form__item field-list__item">
+                <li class="field-list__item">
                   <label for="patronymic" class="field-list__label">Отчество:</label>
                   <input class="field-list__input" type="text" name="text-item" id="patronymic" placeholder="Отчество, если желаете">
                 </li>
@@ -123,10 +123,10 @@
           <fieldset class="order-form__group">
             <div class="order-form__wrapper">
               <h2 class="order-form__title">Доп</h2>
-              <textarea class="forder-form__textarea" name="wishes" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+              <textarea class="order-form__textarea" name="wishes" placeholder="Опишите все ваши пожелания к заказу"></textarea>
             </div>
           </fieldset>
-          <div class="jrder-form__footer">
+          <div class="order-form__footer">
             <small class="order-form__text"><sup>*</sup>Поля обязательны для заполнения</small>
             <button class="order-form_button button" type="submit">Отправить заказ</button>
           </div>
