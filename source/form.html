@@ -44,7 +44,7 @@
         <form class="order__form order-form" method="get" action="https://echo.htmlacademy.ru">
           <fieldset class="order-form__group ">
             <div class="order-form__wrapper">
-              <legend class="order-form__title">Тип</legend>
+              <h2 class="order-form__title">Тип</h2>
               <ul class="order-form__list radio-list">
                 <li class="radio-list__item">
                   <input class="radio-list__input visually-hidden checked" type="radio" name="radio-item" id="acsessorize">
@@ -59,7 +59,7 @@
           </fieldset>
           <fieldset class="order-form__group">
             <div class="order-form__wrapper">
-              <legend class="order-form__title">Цвет</legend>
+              <h2 class="order-form__title">Цвет</h2>
               <ul class="order-form__list checkbox-list">
                 <li class="order-form__item checkbox-list__item">
                   <input class="checkbox-list__input visually-hidden checked" type="checkbox" name="checkbox-item" id="white">
@@ -90,18 +90,18 @@
           </fieldset>
           <fieldset class="order-formm__group">
             <div class="order-form__wrapper">
-              <legend class="order-form__title">Фио</legend>
+              <h2 class="order-form__title">Фио</h2>
               <ul class="order-form__list text-field-list">
                 <li class="order-form__item text-field-list__item">
-                  <label class="text-field-list__label" id="name-add">Имя:</label>
-                  <input class="text-field-list__input" type="text" name="text-item" id="name-add" placeholder="Введите ваше имя*">
+                  <label for="name" class="text-field-list__label">Имя:</label>
+                  <input class="text-field-list__input" type="text" name="text-item" id="name" placeholder="Введите ваше имя*">
                 </li>
                 <li class="order-form__item text-field-list__item">
-                   <label class="text-field-list__label" for="surname-add">Фамилия:</label>
-                  <input class="text-field-list__input" type="text" name="text-item" id="surname-add" placeholder="Укажите фамилию*">
+                   <label for="surname" class="text-field-list__label">Фамилия:</label>
+                  <input class="text-field-list__input" type="text" name="text-item" id="surname" placeholder="Укажите фамилию*">
                 </li>
                 <li class="order-form__item text-field-list__item">
-                  <label class="text-field-list__label" for="patronymic">Отчество:</label>
+                  <label for="patronymic" class="text-field-list__label">Отчество:</label>
                   <input class="text-field-list__input" type="text" name="text-item" id="patronymic" placeholder="Отчество, если желаете">
                 </li>
               </ul>
@@ -109,19 +109,19 @@
           </fieldset>
           <fieldset class="order-form__group">
             <div class="order-form__wrapper">
-              <legend class="order-form__title">Тел</legend>
+              <h2 class="order-form__title">Тел</h2>
               <input class="order-form__tel" type="tel" name="tel" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}" required placeholder="+7 ХХХ ХХХ ХХ ХХ*">
             </div>
           </fieldset>
           <fieldset class="order-form__group">
             <div class="order-form__wrapper">
-              <legend class="order-form__title">E-mail</legend>
+              <h2 class="order-form__title">E-mail</h2>
               <input class="order-form__email" type="email" name="email" required placeholder="Ваш Email*">
             </div>
           </fieldset>
           <fieldset class="order-form__group">
             <div class="order-form__wrapper">
-              <legend class="order-form__title">Доп</legend>
+              <h2 class="order-form__title">Доп</h2>
               <textarea class="forder-form__textarea" name="wishes" placeholder="Опишите все ваши пожелания к заказу"></textarea>
             </div>
           </fieldset>
