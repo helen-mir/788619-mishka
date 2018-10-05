@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>Каталог Mishka</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="page-header">
@@ -21,10 +22,10 @@
               <li class="main-nav__item">
                 <a href="#">Вязание на заказ</a>
               </li>
-              <li class="main-nav__item">
+              <li class="main-nav__item main-nav__item--search">
                 <a href="#">Поиск по сайту</a>
               </li>
-              <li class="main-nav__item">
+              <li class="main-nav__item main-nav__item--cart">
                 <a href="#">Корзина</a>
               </li>
             </ul>
@@ -135,21 +136,18 @@
       <h2 class="modal__title">Добавить в корзину</h2>
       <p class="modal__text">Выберите размер:</p>
       <form class="modal__form">
-        <ul class="modal__list modal__choose-size">
-          <li class="modal__item choose-size__item modal__item--current">
-            <label class="choose-size__label-radio">s
-              <input type="radio" class="choose-size__radio visually-hidden" name="radio" >
-            </label>
+        <ul class="modal__list choose-size">
+          <li class="choose-size__item">
+            <input type="radio" class="choose-size__radio visually-hidden" name="radio" id="size-s" checked>
+            <label  for="size-s" class="choose-size__label-radio">s</label>
           </li>
-          <li class="modal__item choose-size__item">
-            <label class="choose-size__label-radio">m
-              <input type="radio" class="choose-size__radio visually-hidden" name="radio" >
-            </label>
+          <li class="choose-size__item">
+            <input type="radio" class="choose-size__radio visually-hidden" name="radio" id="size-m">
+            <label  for="size-s" class="choose-size__label-radio">m</label>
           </li>
-          <li class="modal__item choose-size__item">
-            <label class="choose-size__label-radio">l
-              <input type="radio" class="choose-size__radio visually-hidden" name="radio" >
-            </label>
+          <li class="choose-size__item">
+            <input type="radio" class="choose-size__radio visually-hidden" name="radio" id="size-l">
+            <label  for="size-l" class="choose-size__label-radio">l</label>
           </li>
         </ul>
         <button class="modal_button button" type="button">Добавить</button>
