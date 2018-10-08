@@ -1,0 +1,19 @@
+.category__item {
+  list-style: none;
+}
+
+.category__list {
+  @include indents;
+}
+
+.category__item--interior-items {
+  background-color: $primary-color;
+}
+.category__item--kids-toys {
+   background-color: $primary-color--darkest;
+}
+
+.category__link {
+  color: $white;
+  @include font-set (19px, 24px, 700);
+}

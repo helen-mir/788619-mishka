@@ -1,0 +1,27 @@
+.order-form__group {
+  width: 320px;
+  margin: 0 auto;
+  padding: 0 30px;
+  border: none;
+}
+
+.order-form__title {
+  color: $primary-color;
+  @include font-set (17px, 16px, 700);
+  text-transform: uppercase;
+}
+
+.order-form__text {
+  @include font-set (14px, 16px, 400);
+}
+
+.order-form__textarea {
+  border: 2px solid $black;
+}
+
+.order-form__email,
+.order-form__textarea,
+.order-form__tel {
+  color: rgba(68, 68, 68, 0.3);
+  @include font-set (17px, 18px, 400);
+}

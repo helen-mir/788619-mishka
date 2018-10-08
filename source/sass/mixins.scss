@@ -1,0 +1,23 @@
+@mixin font-set($size, $line-height, $weight:null) {
+font-size: $size;
+line-height: floor($line-height / $size * 100) / 100;
+font-weight: $weight;
+}
+
+@mixin transition($property, $time, $transition) {
+transition-property: $property;
+transition-duration: $time;
+transition-timing-function: $transition;
+}
+
+@mixin center() {
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+@mixin indents() {
+  width: 320px;
+  margin: 0 auto;
+  padding: 0 30px;
+}

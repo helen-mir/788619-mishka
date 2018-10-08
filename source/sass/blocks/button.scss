@@ -1,0 +1,11 @@
+.button {
+  display: inline-block;
+  border: 2px solid $secondary-color--darkest;
+  padding: 13px;
+  text-transform: uppercase;
+  text-align: center;
+  @include font-set (17px, 20px, 700);
+  color: $secondary-color--darkest;
+  text-decoration: none;
+  background-color: $white;
+}
