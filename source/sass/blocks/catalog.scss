@@ -1,3 +1,15 @@
-.catalog__item {
-  list-style: none;
+.catalog__list {
+  @include lists;
+}
+
+.catalog-item__subtitle-link {
+  @include font-set(17px, 24px, 700);
+}
+
+.catalog-item__desc {
+  @include font-set(13px, 24px, 400);
+}
+
+.catalog-item__price {
+  @include font-set(15px, 24px, 700);
 }

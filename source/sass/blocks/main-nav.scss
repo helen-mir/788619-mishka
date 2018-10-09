@@ -1,8 +1,9 @@
 .main-nav__list {
-  list-style: none;
+  @include lists;
 }
 
 .main-nav__item a {
   color: $black;
-  @include font-set (17px, 24px, 700);
+
+  @include font-set(17px, 24px, 700);
 }

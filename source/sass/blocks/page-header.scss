@@ -5,19 +5,19 @@
 }
 
 .page-header__title {
-  @include font-set 27px, 30px, 700);
+  @include font-set(27px, 30px, 700);
 }
 
 .page-header__top {
-  @include indents;
+  @include wrapper;
 }
 
 .page-header__intro {
-  @include indents;
+  @include wrapper;
   background-color: $secondary-color;
-}
 
-.page-header__intro--index {
-  background-image: url("../img/hero-mobile@1x.jpg");
-  background-repeat: no-repeat;
+  &--index {
+    background-image: url("../img/hero-mobile@1x.jpg");
+    background-repeat: no-repeat;
+  }
 }

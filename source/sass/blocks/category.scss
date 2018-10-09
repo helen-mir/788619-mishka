@@ -1,19 +1,20 @@
-.category__item {
-  list-style: none;
-}
-
 .category__list {
-  @include indents;
+  @include lists;
+  @include wrapper;
 }
 
-.category__item--interior-items {
-  background-color: $primary-color;
-}
-.category__item--kids-toys {
-   background-color: $primary-color--darkest;
+.category__item {
+  &--interior-items {
+    background-color: $primary-color;
+  }
+
+  &--kids-toys {
+    background-color: $primary-color--darkest;
+  }
 }
 
 .category__link {
   color: $white;
-  @include font-set (19px, 24px, 700);
+
+  @include font-set(19px, 24px, 700);
 }
