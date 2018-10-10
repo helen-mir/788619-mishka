@@ -1,0 +1,20 @@
+.category__list {
+  @include lists;
+  @include wrapper;
+}
+
+.category__item {
+  &--interior-items {
+    background-color: $primary-color;
+  }
+
+  &--kids-toys {
+    background-color: $primary-color--darkest;
+  }
+}
+
+.category__link {
+  color: $white;
+
+  @include font-set(19px, 24px, 700);
+}

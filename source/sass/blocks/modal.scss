@@ -1,0 +1,13 @@
+.modal__title {
+  @include font-set(25px, 30px, 700);
+}
+
+.modal__list {
+  @include lists;
+}
+
+.modal_button {
+  color: $white;
+  background-color: $primary-color;
+  border: $border;
+}

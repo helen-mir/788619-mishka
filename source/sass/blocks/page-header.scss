@@ -1,0 +1,23 @@
+.page-header {
+  text-align: center;
+  margin-top: 22px;
+  padding-bottom: 20px;
+}
+
+.page-header__title {
+  @include font-set(27px, 30px, 700);
+}
+
+.page-header__top {
+  @include wrapper;
+}
+
+.page-header__intro {
+  @include wrapper;
+  background-color: $secondary-color;
+
+  &--index {
+    background-image: url("../img/hero-mobile@1x.jpg");
+    background-repeat: no-repeat;
+  }
+}

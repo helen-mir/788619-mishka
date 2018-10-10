@@ -1,0 +1,7 @@
+.production__title {
+  @include font-set(17px, 24px, 700);
+}
+
+.production__text {
+  @include font-set(13px, 24px, 400);
+}

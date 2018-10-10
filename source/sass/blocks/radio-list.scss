@@ -1,0 +1,7 @@
+.radio-list {
+  @include lists;
+}
+
+.radio-list__label {
+  @include font-set(17px, 18px, 700);
+}

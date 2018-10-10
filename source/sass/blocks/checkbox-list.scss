@@ -1,0 +1,7 @@
+.checkbox-list {
+  @include lists;
+}
+
+.checkbox-list__label {
+  @include font-set(17px, 18px, 700);
+}

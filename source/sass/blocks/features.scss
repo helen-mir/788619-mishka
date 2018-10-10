@@ -1,0 +1,11 @@
+.features__title {
+  @include font-set(25px, 30px, 700);
+}
+
+.features__list {
+  @include lists;
+}
+
+.features__item {
+  @include font-set(17px, 20px, 700);
+}

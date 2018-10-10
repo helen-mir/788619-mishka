@@ -1,0 +1,13 @@
+.reviews__title {
+  @include font-set(25px, 30px, 700);
+}
+
+.author__name {
+  @include font-set(17px, 24px, 700);
+  font-style: normal;
+}
+
+.author__link {
+  color: $black;
+  font-style: normal;
+}
