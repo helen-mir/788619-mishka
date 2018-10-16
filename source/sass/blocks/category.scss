@@ -1,6 +1,5 @@
 .category__list {
   @include lists;
-  @include wrapper;
 }
 
 .category__item {
@@ -11,6 +10,14 @@
   &--kids-toys {
     background-color: $primary-color--darkest;
   }
+}
+
+.category__item {
+  padding: 30px 30px;
+}
+
+.category__item a {
+  padding-right: 130px;
 }
 
 .category__link {

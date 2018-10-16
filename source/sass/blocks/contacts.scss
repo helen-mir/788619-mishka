@@ -1,7 +1,50 @@
 .contacts__title {
+  display: block;
+
   @include font-set(18px, 30px, 700);
+  @include wrapper;
+
+  margin-bottom: 43px;
+}
+
+.contacts__list {
+  @include lists;
+  @include wrapper;
+}
+
+.contacts__item {
+  display: flex;
+  justify-content: space-between;
+  color: $secondary-color--darkest;
+}
+.contacts__text,
+.contacts__link,
+.contacts__address {
+  margin: 0;
+  margin-bottom: 40px;
+  padding-bottom: 5px;
+}
+
+.contacts__text {
+  width: 50px;
+}
+
+.contacts__link,
+.contacts__address {
+  width: 183px;
 }
 
 .contacts__link {
-  color: $black;
+  color: $secondary-color--darkest;
+  border-bottom: 1px solid #62d1ba;
+}
+
+.contacts__map {
+  margin-bottom: 40px;
+}
+
+.contacts__button {
+  padding-left: 51px;
+  padding-right: 51px;
+  margin: 0 30px 39px;
 }

@@ -1,9 +1,24 @@
+.main-nav {
+  width: 260px;
+
+  @include wrapper;
+}
+
 .main-nav__list {
   @include lists;
+}
+
+.main-nav__item {
+  padding-top: 31px;
+  padding-bottom: 31px;
 }
 
 .main-nav__item a {
   color: $black;
 
   @include font-set(17px, 24px, 700);
+}
+
+.main-nav__logo {
+  margin-bottom: 22px;
 }

@@ -1,13 +1,55 @@
+.reviews {
+  @include wrapper;
+
+  padding-top:60px;
+}
+
 .reviews__title {
+  margin: 0;
+  margin-bottom: 40px;
+
   @include font-set(25px, 30px, 700);
 }
 
 .author__name {
+  display: block;
+  margin-bottom: 14px;
+
   @include font-set(17px, 24px, 700);
+
   font-style: normal;
 }
 
 .author__link {
-  color: $black;
+  display: block;
+  margin-bottom: 36px;
+  color: $secondary-color--darkest;
   font-style: normal;
+}
+
+.reviews__button {
+  padding-left: 79px;
+  padding-right: 79px;
+  margin-bottom: 95px;
+}
+
+.reviews__item {
+  margin: 0;
+}
+
+.reviews__text {
+  margin: 0;
+  margin-bottom: 40px;
+  color: $secondary-color--darkest;
+
+  @include font-set(15px, 30px, 400);
+}
+
+.review__autor {
+  margin-bottom: 14px;
+}
+
+.slider__controls {
+  display: flex;
+  margin-bottom: 40px;
 }

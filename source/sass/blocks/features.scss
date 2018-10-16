@@ -1,4 +1,12 @@
+.features {
+  @include wrapper;
+}
+
 .features__title {
+  display: block;
+  margin: 0;
+  margin-bottom: 30px;
+
   @include font-set(25px, 30px, 700);
 }
 
@@ -7,5 +15,7 @@
 }
 
 .features__item {
+  padding-top: 60px;
+
   @include font-set(17px, 20px, 700);
 }

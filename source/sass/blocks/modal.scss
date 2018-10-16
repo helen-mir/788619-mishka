@@ -1,13 +1,39 @@
+.modal {
+  @include wrapper;
+
+  padding-top: 38px;
+  padding-bottom: 46px;
+}
+
 .modal__title {
+  display: block;
+  margin: 0;
+  margin-bottom: 26px;
+
   @include font-set(25px, 30px, 700);
+
+  text-align: center;
+}
+
+.modal__text {
+  display: block;
+  margin: 0;
+  margin-bottom: 29px;
+  text-align: center;
 }
 
 .modal__list {
+  display: flex;
+
   @include lists;
+
+  margin-bottom: 32px;
 }
 
 .modal_button {
+  padding-left: 82px;
+  padding-right: 82px;
   color: $white;
   background-color: $primary-color;
-  border: $border;
+  border: 2px solid $primary-color;
 }
