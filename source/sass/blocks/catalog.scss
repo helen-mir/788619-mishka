@@ -1,15 +1,50 @@
+.catalog {
+  padding-top: 30px;
+}
+
 .catalog__list {
   @include lists;
+  @include wrapper;
 }
+
+.catalog-item {
+  margin-bottom: 30px;
+
+  border: 1px solid #ededed;
+}
+
+.catalog-item__header,
+.catalog-item__footer {
+  padding: 0 28px;
+}
+
+.catalog-item__image-link {
+  margin-bottom: 30px;
+}
+
+.catalog-item__subtitle {
+  margin: 0;
+  margin-bottom: 21px;
+}
+
 
 .catalog-item__subtitle-link {
   @include font-set(17px, 24px, 700);
 }
 
 .catalog-item__desc {
+  margin: 0;
+  margin-bottom: 28px;
+
   @include font-set(13px, 24px, 400);
 }
 
 .catalog-item__price {
+  margin: 0;
+  margin-bottom: 34px;
+  padding-top: 27px;
+
   @include font-set(15px, 24px, 700);
+
+  border-top: 1px solid #ececec;
 }

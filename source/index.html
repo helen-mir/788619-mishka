@@ -10,13 +10,15 @@
   <body>
     <header class="page-header">
       <div class="page-header__top">
-        <nav class="main-nav">
+         <nav class="main-nav">
           <button class="main-nav__toggle" type="button" aria-label="Открыть меню"></button>
           <div class="main-nav__wrapper">
-            <a class="main-nav__logo">
-              <img class="main-nav__logo-image" src="img/logo-mobile.svg" alt="Логотип">
-            </a>
             <ul class="main-nav__list">
+              <li class="main-nav__item main-nav__item--logo">
+                <a href="#" class="main-nav__logo">
+                  <img class="main-nav__logo-image" src="img/logo-mobile.svg" alt="Логотип">
+                </a>
+              </li>
               <li class="main-nav__item">
                 <a href="catalog.html">Каталог товаров</a>
               </li>
@@ -24,10 +26,10 @@
                 <a href="#">Вязание на заказ</a>
               </li>
               <li class="main-nav__item main-nav__item--search">
-                <a href="#">Поиск по сайту</a>
+                <a href="#">Поиск</a>
               </li>
               <li class="main-nav__item main-nav__item--cart">
-                <a href="#">Корзина</a>
+                <a href="#">Корзина: пока пуста</a>
               </li>
               <!--
               <li class="main-nav__item">
@@ -41,8 +43,8 @@
           </div>
         </nav>
         <div class="page-header__intro page-header__intro--index">
+          <p class="page-header__info">Бесплатная доставка по России</p>
           <h1 class="page-header__title">Милые штуки ручной работы&nbsp;для дома</h1>
-          <!--<p>Бесплатная доставка по России</p>-->
         </div>
       </div>
     </header>
@@ -141,7 +143,7 @@
             </li>
           </ul>
           <div class="contacts__map">
-            <img src="img/map-mobile@1x.jpeg" alt="Карта">
+            <img src="img/map-mobile@1x.jpg" alt="Карта">
             <iframe src="https://yandex.ru/map-widget/v1/-/CBBbNHC0sB"></iframe>
           </div>
           <a class="contacts__button button" href="#">Напишите нам</a>

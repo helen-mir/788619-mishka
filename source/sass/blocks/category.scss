@@ -25,3 +25,9 @@
 
   @include font-set(19px, 24px, 700);
 }
+
+@media (min-width: $tablet-width) {
+  .category__list {
+    display: flex;
+  }
+}

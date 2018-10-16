@@ -21,6 +21,11 @@
   padding: 0 30px;
 }
 
+@mixin wrapper-tablet() {
+  margin: 0 auto;
+  padding: 0 50px;
+}
+
 @mixin lists() {
   list-style: none;
   padding: 0;

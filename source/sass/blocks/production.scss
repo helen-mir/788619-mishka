@@ -1,7 +1,36 @@
+.production {
+  @include wrapper;
+}
+
+.production__wrapper {
+  border: 1px solid #ededed;
+}
+
+.production__wrapper-title {
+  padding-top: 29px;
+  padding-right: 23px;
+  padding-left: 91px;
+  padding-bottom: 26px;
+}
+
 .production__title {
   @include font-set(17px, 24px, 700);
 }
 
 .production__text {
+  display: block;
+  margin-top: 34px;
+  margin-bottom: 33px;
+
   @include font-set(13px, 24px, 400);
+}
+
+.production__footer {
+  padding: 0 34px;
+}
+
+.production__button {
+  margin-bottom: 33px;
+  padding-left: 23px;
+  padding-right: 23px;
 }
