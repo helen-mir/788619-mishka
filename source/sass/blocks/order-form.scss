@@ -47,3 +47,10 @@
   padding-left: 45px;
   padding-right: 45px;
 }
+
+@media (min-width: $tablet-width) {
+  .order-form__group {
+    display: flex;
+    flex-direction: row;
+  }
+}
