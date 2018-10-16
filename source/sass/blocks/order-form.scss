@@ -1,11 +1,13 @@
 .order-form__group {
-  width: 320px;
-  margin: 0 auto;
-  padding: 0 30px;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 25px;
   border: none;
 }
 
 .order-form__title {
+  margin: 0;
+  margin-bottom: 30px;
   color: $primary-color;
 
   @include font-set(17px, 16px, 700);
@@ -13,17 +15,35 @@
 }
 
 .order-form__text {
-  @include font-set(14px, 16px, 400);
-}
+  color: $secondary-color--darkest;
 
-.order-form__textarea {
-  border: 2px solid $black;
+  @include font-set(14px, 16px, 400);
 }
 
 .order-form__email,
 .order-form__textarea,
 .order-form__tel {
+  width: 260px;
   color: rgba(68, 68, 68, 0.3);
 
   @include font-set(17px, 18px, 400);
+
+  border: 0;
+  border-bottom: 2px solid $black;
+}
+
+.order-form__textarea {
+  width: 228px;
+  height: 140px;
+  padding-top: 17px;
+  padding-left: 16px;
+  padding-right: 16px;
+  border: 2px solid $black;
+}
+
+.order-form__button {
+  margin-top: 33px;
+  margin-bottom: 55px;
+  padding-left: 45px;
+  padding-right: 45px;
 }

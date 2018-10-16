@@ -2,6 +2,11 @@
   @include lists;
 }
 
+.checkbox-list__item {
+  margin-bottom: 33px;
+  padding-left: 54px;
+}
+
 .checkbox-list__label {
   @include font-set(17px, 18px, 700);
 }
