@@ -31,14 +31,12 @@
               <li class="main-nav__item main-nav__item--cart">
                 <a href="#">Корзина: пока пуста</a>
               </li>
-              <!--
-              <li class="main-nav__item">
+              <li class="main-nav__item main-nav__item--new">
                 <a href="#">Новые поступления</a>
               </li>
-              <li class="main-nav__item">
+              <li class="main-nav__item main-nav__item--sale">
                 <a href="#">Распродажа</a>
               </li>
-              -->
             </ul>
           </div>
         </nav>
@@ -85,8 +83,14 @@
               </tr>
             </table>
           </div>
-          <div class="weekly-good__image">
+          <div class="weekly-good__image-mobile">
             <img src="img/triple-set-mobile@1x.jpg" alt="Товар недели">
+          </div>
+          <div class="weekly-good__image-tablet">
+            <img src="img/triple-set-tablet@1x.jpg" alt="Товар недели">
+          </div>
+          <div class="weekly-good__image-desktop">
+            <img src="img/triple-set-desktop@1x.jpg" alt="Товар недели">
           </div>
           <footer class="weekly-good__footer">
             <p class="weekly-good__price">Цена: 990 руб.</p>
@@ -143,8 +147,16 @@
             </li>
           </ul>
           <div class="contacts__map">
-            <img src="img/map-mobile@1x.jpg" alt="Карта">
             <iframe src="https://yandex.ru/map-widget/v1/-/CBBbNHC0sB"></iframe>
+            <div class="contacts__map-mobile">
+              <img src="img/map-mobile@1x.jpg" alt="Карта">
+            </div>
+            <div class="contacts__map-tablet">
+              <img src="img/map-tablet@1x.jpg" alt="Карта">
+            </div>
+            <div class="contacts__map-desktop">
+              <img src="img/map-desktop@1x.jpg" alt="Карта">
+            </div>
           </div>
           <a class="contacts__button button" href="#">Напишите нам</a>
         </div>
@@ -153,6 +165,9 @@
 
     <footer class="page-footer">
       <div class="page-footer__wrapper">
+        <div class="page-footer__logo">
+          <img class="page-footer__logo-image" src="img/logo-footer.svg" alt="Логотип">
+        </div>
         <div class="page-footer__social social">
           <ul class="social__list">
             <li class="social__item">

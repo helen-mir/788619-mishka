@@ -26,6 +26,11 @@
   padding: 0 50px;
 }
 
+@mixin wrapper-desktop() {
+  margin: 0 auto;
+  padding: 0 100px;
+}
+
 @mixin lists() {
   list-style: none;
   padding: 0;

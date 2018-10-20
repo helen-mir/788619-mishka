@@ -53,3 +53,30 @@
   display: flex;
   margin-bottom: 40px;
 }
+
+@media (min-width: $tablet-width) {
+
+  .reviews {
+    background-image: url(../img/review@1x.jpg);
+    background-repeat: no-repeat;
+    background-position: left;
+  }
+
+  .reviews__wrapper {
+    position: relative;
+
+    @include wrapper-tablet;
+  }
+
+  .reviews__button {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding-left: 31px;
+    padding-right: 31px;
+  }
+
+  .reviews__title {
+    @include font-set(43px, 50px, 700);
+  }
+}

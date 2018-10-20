@@ -29,5 +29,23 @@
 @media (min-width: $tablet-width) {
   .category__list {
     display: flex;
+
+    @include wrapper-tablet;
+  }
+
+  .category__item a {
+  padding-right: 350px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .category__list {
+    width: 1050px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .category__item {
+    width: 525px;
   }
 }

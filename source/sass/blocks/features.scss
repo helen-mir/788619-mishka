@@ -19,3 +19,52 @@
 
   @include font-set(17px, 20px, 700);
 }
+
+@media (min-width: $tablet-width) {
+
+  .features {
+    @include wrapper-tablet;
+
+    padding-bottom: 60px;
+  }
+
+  .features__title {
+    @include font-set(43px, 50px, 700);
+  }
+
+
+  .features__list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 668px;
+  }
+
+  .features__item {
+    width: 304px;
+  }
+
+
+  .features__item--friedly-materials {
+    order: 0;
+  }
+
+  .features__item--handmade {
+    order: 1;
+  }
+
+  .features__item--scandinavian-style {
+    order: 2;
+  }
+
+  .features__item--support {
+    order: 3;
+  }
+
+  .features__item--increases-like {
+    order: 4;
+  }
+
+  .features__item--gift-wrap {
+    order: 5;
+  }
+}
