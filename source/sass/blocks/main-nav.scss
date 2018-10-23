@@ -80,6 +80,10 @@
     @include wrapper-desktop;
   }
 
+  .main-nav__list {
+    width: 1050px;
+  }
+
   .main-nav__item--new,
   .main-nav__item--sale {
     display: block;

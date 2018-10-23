@@ -132,3 +132,46 @@
     height: 455px;
     }
 }
+
+@media (min-width: $desktop-width) {
+
+  .contacts__list {
+    display: block;
+    padding-left: 175px;
+  }
+
+  .contacts__title {
+    padding-left: 175px;
+  }
+
+  .contacts__button {
+    margin: 0;
+    margin-left: 175px;
+    margin-top: 20px;
+
+  }
+
+  .contacts__wrapper {
+    position: relative;
+    padding-top: 150px;
+    padding-bottom: 100px;
+  }
+
+  .contacts__map {
+    position: absolute;
+    top: 47px;
+    right: 0;
+    width: 525px;
+  }
+
+  .contacts__map-tablet {
+    display: none;
+  }
+
+  .contacts__map-desktop {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+}

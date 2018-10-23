@@ -68,3 +68,13 @@
     order: 5;
   }
 }
+
+@media (min-width: $desktop-width) {
+
+  .features {
+    padding: 0;
+    padding-top: 73px;
+    padding-left: 175px;
+    padding-bottom: 92px;
+  }
+}

@@ -80,3 +80,19 @@
     @include font-set(43px, 50px, 700);
   }
 }
+
+@media (min-width: $desktop-width) {
+
+  .reviews {
+    padding: 0;
+  }
+
+  .reviews__wrapper {
+    padding-top: 80px;
+    padding-left: 175px;
+  }
+
+  .reviews__button {
+    top: 78px;
+  }
+}

@@ -71,6 +71,8 @@
   }
 
   .page-header__intro {
+    @include wrapper-desktop;
+
     margin-bottom: -83px;
   }
 }
