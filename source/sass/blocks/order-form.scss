@@ -14,6 +14,12 @@
   text-transform: uppercase;
 }
 
+.order-form__list {
+  @include lists;
+
+  padding-left: 54px;
+}
+
 .order-form__text {
   color: $secondary-color--darkest;
 
@@ -52,5 +58,70 @@
   .order-form__group {
     display: flex;
     flex-direction: row;
+  }
+
+  .order-form__wrapper {
+    display: flex;
+  }
+
+  .order-form__title {
+    width: 64px;
+    margin-right: 103px;
+  }
+
+  .order-form__list {
+    padding-left: 80px;
+  }
+
+  .order-form__email,
+  .order-form__tel {
+    width: 501px;
+  }
+
+  .order-form__textarea {
+    width: 469px;
+  }
+
+  .order-form__footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 54px;
+    margin-bottom: 54px;
+  }
+
+  .order-form__button {
+    margin: 0;
+    order: -1;
+  }
+
+  .order-form__text {
+    align-items: center;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .order-form {
+    padding-left: 64px;
+  }
+
+  .order-form__title {
+    margin-right: 69px;
+  }
+
+  .order-form__email,
+  .order-form__tel {
+    width: 700px;
+  }
+
+  .order-form__textarea {
+    width: 668px;
+  }
+
+  .order-form__text {
+    margin-right: 197px;
+  }
+
+  .order-form__button {
+    margin-left: 132px;
   }
 }

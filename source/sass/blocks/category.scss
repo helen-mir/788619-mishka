@@ -3,6 +3,8 @@
 }
 
 .category__item {
+  padding: 30px 30px;
+
   &--interior-items {
     background-color: $primary-color;
   }
@@ -10,10 +12,6 @@
   &--kids-toys {
     background-color: $primary-color--darkest;
   }
-}
-
-.category__item {
-  padding: 30px 30px;
 }
 
 .category__item a {
@@ -34,7 +32,7 @@
   }
 
   .category__item a {
-  padding-right: 350px;
+    padding-right: 350px;
   }
 }
 

@@ -1,7 +1,7 @@
 .reviews {
   @include wrapper;
 
-  padding-top:60px;
+  padding-top: 60px;
 }
 
 .reviews__title {
@@ -55,9 +55,8 @@
 }
 
 @media (min-width: $tablet-width) {
-
   .reviews {
-    background-image: url(../img/review@1x.jpg);
+    background-image: url("../img/review@1x.jpg");
     background-repeat: no-repeat;
     background-position: left;
   }
@@ -82,7 +81,6 @@
 }
 
 @media (min-width: $desktop-width) {
-
   .reviews {
     padding: 0;
   }

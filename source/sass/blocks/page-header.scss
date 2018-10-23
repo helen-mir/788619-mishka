@@ -7,6 +7,7 @@
   margin: 0;
   padding-top: 78px;
   padding-bottom: 119px;
+
   @include font-set(27px, 30px, 700);
 }
 
@@ -28,6 +29,8 @@
 @media (min-width: $tablet-width) {
   .page-header__info {
     display: block;
+    margin-top: 25px;
+    margin-bottom: 0;
     text-align: right;
   }
 
@@ -46,6 +49,16 @@
       background-repeat: no-repeat;
       background-position: center;
     }
+
+    &--catalog {
+      height: 221px;
+      margin-bottom: 0;
+    }
+
+    &--form {
+      height: 214px;
+      margin-bottom: 0;
+    }
   }
 
   .page-header__title {
@@ -54,17 +67,20 @@
     color: $black;
 
     @include font-set(43px, 50px, 700);
+
+    &--catalog {
+      padding-top: 75px;
+      padding-bottom: 77px;
+    }
+
+    &--form {
+      padding-top: 75px;
+      padding-bottom: 77px;
+    }
   }
 }
 
 @media (min-width: $desktop-width) {
-
-  .page-header__intro--index {
-    background-image: url("../img/hero-desktop@1x.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-
   .page-header__title {
     padding-left: 220px;
     padding-right: 220px;
@@ -74,5 +90,23 @@
     @include wrapper-desktop;
 
     margin-bottom: -83px;
+
+    &--index {
+      background-image: url("../img/hero-desktop@1x.jpg");
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
+    &--catalog {
+      height: 248px;
+      margin-top: -80px;
+      margin-bottom: 0;
+    }
+
+    &--form {
+      height: 213px;
+      margin-top: -80px;
+      margin-bottom: 0;
+    }
   }
 }

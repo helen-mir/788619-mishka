@@ -17,6 +17,7 @@
   justify-content: space-between;
   color: $secondary-color--darkest;
 }
+
 .contacts__text,
 .contacts__link,
 .contacts__address {
@@ -80,7 +81,6 @@
 }
 
 @media (min-width: $tablet-width) {
-
   .contacts__title {
     @include font-set(43px, 50px, 700);
     @include wrapper-tablet;
@@ -130,11 +130,10 @@
 
   .contacts__map iframe {
     height: 455px;
-    }
+  }
 }
 
 @media (min-width: $desktop-width) {
-
   .contacts__list {
     display: block;
     padding-left: 175px;
@@ -148,7 +147,6 @@
     margin: 0;
     margin-left: 175px;
     margin-top: 20px;
-
   }
 
   .contacts__wrapper {

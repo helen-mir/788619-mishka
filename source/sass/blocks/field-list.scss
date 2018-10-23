@@ -23,3 +23,27 @@
 .field-list__label {
   @include font-set(17px, 18px, 700);
 }
+
+@media (min-width: $tablet-width) {
+  .field-list__label {
+    margin-right: 23px;
+  }
+
+  .field-list__input {
+    width: 375px;
+  }
+
+  .field-list__input:nth-child(1) { /*не работает*/
+    width: 430px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .field-list__input {
+    width: 577px;
+  }
+
+  .field-list__input:nth-child(1) { /*не работает*/
+    width: 629px;
+  }
+}

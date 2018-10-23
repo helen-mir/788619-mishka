@@ -13,10 +13,12 @@
         <nav class="main-nav">
           <button class="main-nav__toggle" type="button" aria-label="Открыть меню"></button>
           <div class="main-nav__wrapper">
-            <a class="main-nav__logo">
-              <img class="main-nav__logo-image" src="img/logo-mobile.svg" alt="Логотип">
-            </a>
             <ul class="main-nav__list">
+              <li class="main-nav__item main-nav__item--logo">
+                <a href="#" class="main-nav__logo">
+                  <img class="main-nav__logo-image" src="img/logo-mobile.svg" alt="Логотип">
+                </a>
+              </li>
               <li class="main-nav__item">
                 <a href="catalog.html">Каталог товаров</a>
               </li>
@@ -24,16 +26,23 @@
                 <a href="#">Вязание на заказ</a>
               </li>
               <li class="main-nav__item main-nav__item--search">
-                <a href="#">Поиск по сайту</a>
+                <a href="#">Поиск</a>
               </li>
               <li class="main-nav__item main-nav__item--cart">
-                <a href="#">Корзина</a>
+                <a href="#">Корзина: пока пуста</a>
+              </li>
+              <li class="main-nav__item main-nav__item--new">
+                <a href="#">Новые поступления</a>
+              </li>
+              <li class="main-nav__item main-nav__item--sale">
+                <a href="#">Распродажа</a>
               </li>
             </ul>
           </div>
         </nav>
-        <div class="page-header__intro">
-          <h1 class="page-header__title">Вязание на заказ</h1>
+        <div class="page-header__intro page-header__intro--form">
+          <p class="page-header__info">Бесплатная доставка по России</p>
+          <h1 class="page-header__title page-header__title--form">Вязание на заказ</h1>
         </div>
       </div>
     </header>
@@ -42,9 +51,10 @@
 
       <section class="order">
         <h2 class="order__title visually-hidden">Форма заказа</h2>
-        <p class="order_text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
+        <p class="order__text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
         <form class="order__form order-form" method="get" action="https://echo.htmlacademy.ru">
           <fieldset class="order-form__group">
+            <div class="order-form__wrapper">
               <h2 class="order-form__title">Тип</h2>
               <ul class="order-form__list radio-list">
                 <li class="radio-list__item">
@@ -56,6 +66,7 @@
                   <label class="radio-list__label" for="acsessorize">Детская игрушка</label>
                 </li>
               </ul>
+            </div>
           </fieldset>
           <fieldset class="order-form__group">
             <div class="order-form__wrapper">
@@ -112,8 +123,8 @@
               <h2 class="order-form__title">Тел</h2>
               <input class="order-form__tel" type="tel" name="tel" pattern="+7-[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" required placeholder="+7 ХХХ ХХХ ХХ ХХ*">
             </div>
-          </fieldset>
-          <fieldset class="order-form__group">
+          </div>
+          <div class="order-form__group">
             <div class="order-form__wrapper">
               <h2 class="order-form__title">E-mail</h2>
               <input class="order-form__email" type="email" name="email" required placeholder="Ваш Email*">
@@ -135,6 +146,9 @@
 
     <footer class="page-footer">
       <div class="page-footer__wrapper">
+        <div class="page-footer__logo">
+          <img class="page-footer__logo-image" src="img/logo-footer.svg" alt="Логотип">
+        </div>
         <div class="page-footer__social social">
           <ul class="social__list">
             <li class="social__item">

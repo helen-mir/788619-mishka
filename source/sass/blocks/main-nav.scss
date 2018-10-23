@@ -1,5 +1,4 @@
 .main-nav {
-
   @include wrapper;
 }
 
@@ -51,12 +50,12 @@
   .main-nav__logo {
     margin: 0;
   }
+
   .main-nav__item--logo {
     width: 318px;
     order: -3;
     padding-top: 22px;
     padding-bottom: 20px;
-
   }
 
   .main-nav__item--cart {
@@ -75,7 +74,6 @@
 }
 
 @media (min-width: $desktop-width) {
-
   .main-nav {
     @include wrapper-desktop;
   }
