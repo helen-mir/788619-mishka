@@ -26,11 +26,10 @@
 }
 
 .production__footer {
-  padding: 0 34px;
+  padding: 34px 34px 33px;
 }
 
 .production__button {
-  margin-bottom: 33px;
   padding-left: 23px;
   padding-right: 23px;
 }
@@ -82,13 +81,9 @@
 
   .production__wrapper-title,
   .production__footer {
-    margin-left: 700px;
+    margin-left: auto;
     padding-left: 60px;
     padding-right: 60px;
-  }
-
-  .production__wrapper-title {
-    padding-right: 140px;
   }
 
   .production__button {

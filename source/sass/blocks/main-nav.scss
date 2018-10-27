@@ -4,6 +4,8 @@
 
 .main-nav__list {
   @include lists;
+
+  text-align: center;
 }
 
 .main-nav__item {
@@ -11,6 +13,10 @@
   padding-bottom: 31px;
 
   @include font-set(17px, 24px, 700);
+
+  &--logo {
+    padding-top: 22px;
+  }
 }
 
 .main-nav__item--new,

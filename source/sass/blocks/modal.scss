@@ -1,6 +1,9 @@
 .modal {
-  @include wrapper;
-
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate (-50%, -50%);
   padding-top: 38px;
   padding-bottom: 46px;
 }

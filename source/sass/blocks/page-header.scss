@@ -1,21 +1,21 @@
-.page-header {
-  text-align: center;
-  margin-top: 22px;
-}
-
 .page-header__title {
   margin: 0;
   padding-top: 78px;
-  padding-bottom: 119px;
+  text-align: center;
+  color: $black;
 
   @include font-set(27px, 30px, 700);
 }
 
 .page-header__intro {
+  min-height: 177px;
+
   @include wrapper;
-  background-color: #fbfbfb;
+
+  background-color: #f9f9f9;
 
   &--index {
+    min-height: 284px;
     background-image: url("../img/hero-mobile@1x.jpg");
     background-repeat: no-repeat;
     background-position: center;
@@ -35,9 +35,8 @@
   }
 
   .page-header__intro {
-    height: 720px;
+    min-height: 214px;
     margin-top: -90px;
-    margin-bottom: -103px;
     color: $secondary-color--darkest;
 
     @include font-set(15px, 24px, 400);
@@ -45,38 +44,18 @@
     border-top: 1px solid #e7e7e7;
 
     &--index {
+      min-height: 627px;
       background-image: url("../img/hero-tablet@1x.jpg");
       background-repeat: no-repeat;
       background-position: center;
-    }
-
-    &--catalog {
-      height: 221px;
-      margin-bottom: 0;
-    }
-
-    &--form {
-      height: 214px;
-      margin-bottom: 0;
     }
   }
 
   .page-header__title {
     padding-top: 160px;
     padding-bottom: 315px;
-    color: $black;
 
     @include font-set(43px, 50px, 700);
-
-    &--catalog {
-      padding-top: 75px;
-      padding-bottom: 77px;
-    }
-
-    &--form {
-      padding-top: 75px;
-      padding-bottom: 77px;
-    }
   }
 }
 
@@ -87,26 +66,17 @@
   }
 
   .page-header__intro {
+    min-height: 254px;
+
     @include wrapper-desktop;
 
     margin-bottom: -83px;
 
     &--index {
+      min-height: 629px;
       background-image: url("../img/hero-desktop@1x.jpg");
       background-repeat: no-repeat;
       background-position: center;
-    }
-
-    &--catalog {
-      height: 248px;
-      margin-top: -80px;
-      margin-bottom: 0;
-    }
-
-    &--form {
-      height: 213px;
-      margin-top: -80px;
-      margin-bottom: 0;
     }
   }
 }

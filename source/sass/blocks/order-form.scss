@@ -1,3 +1,7 @@
+.order-form__wrapper {
+  @include wrapper;
+}
+
 .order-form__group {
   padding: 0;
   margin: 0;
@@ -12,12 +16,6 @@
 
   @include font-set(17px, 16px, 700);
   text-transform: uppercase;
-}
-
-.order-form__list {
-  @include lists;
-
-  padding-left: 54px;
 }
 
 .order-form__text {
@@ -60,17 +58,18 @@
     flex-direction: row;
   }
 
+  .order-form__group:nth-child(even) { /*не применяется*/
+    backround-color: $secondary-color;
+  }
+
   .order-form__wrapper {
     display: flex;
+
+    @include wrapper-tablet;
   }
 
   .order-form__title {
-    width: 64px;
-    margin-right: 103px;
-  }
-
-  .order-form__list {
-    padding-left: 80px;
+    width: 166px;
   }
 
   .order-form__email,
@@ -85,6 +84,7 @@
   .order-form__footer {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin-top: 54px;
     margin-bottom: 54px;
   }
@@ -95,7 +95,7 @@
   }
 
   .order-form__text {
-    align-items: center;
+    @include font-set(17px, 30px, 400);
   }
 }
 
@@ -105,7 +105,7 @@
   }
 
   .order-form__title {
-    margin-right: 69px;
+    width: 175px;
   }
 
   .order-form__email,

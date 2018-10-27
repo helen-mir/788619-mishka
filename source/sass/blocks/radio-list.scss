@@ -3,5 +3,13 @@
 }
 
 .radio-list__label {
+  padding-left: 62px;
+
   @include font-set(17px, 18px, 700);
+}
+
+@media (min-width: $tablet-width) {
+  .checkbox-list__label {
+    padding-left: 81px;
+  }
 }

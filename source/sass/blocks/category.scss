@@ -1,3 +1,7 @@
+.category {
+  background-color: #fbfbfb;
+}
+
 .category__list {
   @include lists;
 }
@@ -14,11 +18,8 @@
   }
 }
 
-.category__item a {
-  padding-right: 130px;
-}
-
 .category__link {
+  width: 130px;
   color: $white;
 
   @include font-set(19px, 24px, 700);
@@ -31,8 +32,8 @@
     @include wrapper-tablet;
   }
 
-  .category__item a {
-    padding-right: 350px;
+  .category__item {
+    width: 334px;
   }
 }
 
