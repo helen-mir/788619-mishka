@@ -69,9 +69,12 @@
 }
 
 @media (min-width: $tablet-width) {
+  .contacts__wrapper {
+    @include wrapper-tablet;
+  }
+
   .contacts__title {
     @include font-set(43px, 50px, 700);
-    @include wrapper-tablet;
 
     margin-bottom: 62px;
   }
@@ -79,8 +82,6 @@
   .contacts__list {
     display: flex;
     justify-content: space-between;
-
-    @include wrapper-tablet;
   }
 
   .contacts__item {
@@ -95,6 +96,13 @@
 }
 
 @media (min-width: $desktop-width) {
+  .contacts__wrapper {
+    @include wrapper-desktop;
+
+    padding-top: 150px;
+    padding-bottom: 100px;
+  }
+
   .contacts__list {
     display: block;
     padding-left: 175px;
@@ -106,12 +114,5 @@
 
   .contacts__button {
     margin-bottom: 105px;
-  }
-
-  .contacts__wrapper {
-    @include wrapper-desktop;
-
-    padding-top: 150px;
-    padding-bottom: 100px;
   }
 }

@@ -39,9 +39,7 @@
 
 @media (min-width: $desktop-width) {
   .category__list {
-    width: 1050px;
-    margin: 0;
-    padding: 0;
+    @include wrapper-desktop;
   }
 
   .category__item {

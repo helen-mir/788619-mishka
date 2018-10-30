@@ -73,15 +73,10 @@
 
 @media (min-width: $desktop-width) {
   .features__wrapper {
-    @include wrapper-desktop;
+    width: 1150px;
+    padding: 0 275px;
 
     padding-bottom: 92px;
-  }
-
-  .features__title,
-  .features__list {
-    padding-left: 175px;
-    padding-right: 175px;
   }
 
   .features__list {

@@ -120,11 +120,6 @@
     top: 70px;
   }
 
-  .weekly-good__content,
-  .weekly-good__footer {
-    width: 50%;
-  }
-
   .weekly-good__button {
     padding-left: 100px;
     padding-right: 100px;
@@ -165,7 +160,6 @@
 
   .weekly-good__content,
   .weekly-good__footer {
-    width: 292px;
     padding-left: 175px;
     padding-right: 584px;
   }
@@ -180,6 +174,8 @@
   }
 
   .weekly-good__wrapper {
+    @include wrapper-desktop;
+
     padding-bottom: 168px;
   }
 }

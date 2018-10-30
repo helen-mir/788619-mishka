@@ -17,18 +17,18 @@
 }
 
 @mixin wrapper() {
-  width: 100%;
+  width: 320px;
   margin: 0 auto;
   padding: 0 30px;
 }
 
 @mixin wrapper-tablet() {
   width: 768px;
-  max-width: 1150px;
   padding: 0 50px;
 }
 
 @mixin wrapper-desktop() {
+  width: 1150px;
   padding: 0 100px;
 }
 

@@ -94,7 +94,13 @@
 }
 
 @media (min-width: $desktop-width) {
+  .reviews {
+    @include wrapper-desktop;
+  }
+
   .reviews__wrapper {
+    margin: 0;
+    padding: 0;
     padding-top: 80px;
     padding-left: 175px;
   }

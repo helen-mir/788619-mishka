@@ -1,5 +1,9 @@
-.page-footer__wrapper {
+.page-footer {
   background: $secondary-color;
+}
+
+.page-footer__wrapper {
+  @include wrapper;
 }
 
 .page-footer__logo {

@@ -1,8 +1,10 @@
 .production {
-  @include wrapper;
+  padding-bottom: 33px;
 }
 
 .production__wrapper {
+  @include wrapper;
+
   border: 1px solid #ededed;
 }
 
@@ -36,12 +38,14 @@
 
 @media (min-width: $tablet-width) {
   .production {
-    @include wrapper-tablet;
+    padding-bottom: 46px;
   }
 
   .production__wrapper {
     display: flex;
     flex-direction: column;
+
+    @include wrapper-tablet;
   }
 
   .production__video {
@@ -53,8 +57,7 @@
   }
 
   .production__button {
-    padding-left: 217px;
-    padding-right: 217px;
+    width: 100%;
   }
 
   .production__text {
@@ -69,7 +72,7 @@
 }
 
 @media (min-width: $desktop-width) {
-  .production_wrapper {
+  .production__wrapper {
     position: relative;
   }
 

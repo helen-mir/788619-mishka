@@ -1,4 +1,5 @@
-.order-form__wrapper {
+.order-form__wrapper,
+.order-form__footer {
   @include wrapper;
 }
 
@@ -85,6 +86,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @include wrapper-tablet;
+
     margin-top: 54px;
     margin-bottom: 54px;
   }
@@ -102,10 +106,6 @@
 @media (min-width: $desktop-width) {
   .order-form {
     padding-left: 64px;
-  }
-
-  .order-form__title {
-    width: 175px;
   }
 
   .order-form__email,
