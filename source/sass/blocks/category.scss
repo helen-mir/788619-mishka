@@ -28,6 +28,8 @@
 @media (min-width: $tablet-width) {
   .category__list {
     display: flex;
+    margin: 0 auto;
+    width: 100%;
 
     @include wrapper-tablet;
   }

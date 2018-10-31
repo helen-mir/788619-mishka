@@ -16,6 +16,9 @@
 }
 
 .production__title {
+  display: block;
+  margin: 0;
+
   @include font-set(17px, 24px, 700);
 }
 
@@ -46,6 +49,10 @@
     flex-direction: column;
 
     @include wrapper-tablet;
+  }
+
+  .production__wrapper-title {
+    padding-left: 103px;
   }
 
   .production__video {
@@ -79,7 +86,7 @@
   .production__video {
     position: absolute;
     top: 0;
-    left: 0;
+    left: 50px;
   }
 
   .production__wrapper-title,

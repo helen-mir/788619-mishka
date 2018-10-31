@@ -5,12 +5,11 @@
 }
 
 .field-list__item {
-  margin-top: 25px;
+  margin-bottom: 25px;
 }
 
 .field-list__input {
   width: 260px;
-  padding-top: 18px;
   padding-bottom: 15px;
   color: rgba(68, 68, 68, 0.3);
 
@@ -21,20 +20,30 @@
 }
 
 .field-list__label {
+  display: block;
+  margin-bottom: 8px;
+
   @include font-set(17px, 18px, 700);
 }
 
 @media (min-width: $tablet-width) {
   .field-list__label {
+    display: inline;
     margin-right: 23px;
+
+    @include font-set(19px, 18px, 700);
   }
 
   .field-list__input {
-    width: 375px;
+    width: 374px;
   }
 
   .field-list__input:nth-child(1) { /*не работает*/
     width: 430px;
+  }
+
+  .field-list__item {
+    margin-bottom: 33px;
   }
 }
 

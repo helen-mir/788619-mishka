@@ -1,11 +1,10 @@
 .weekly-good {
   padding-top: 33px;
+  padding-bottom: 76px;
 }
 
 .weekly-good__wrapper {
   @include wrapper;
-
-  padding-bottom: 76px;
 }
 
 .weekly-good__title {
@@ -83,6 +82,7 @@
 @media (min-width: $tablet-width) {
   .weekly-good {
     padding-top: 55px;
+    padding-bottom: 128px;
   }
 
   .weekly-good__header {
@@ -105,8 +105,6 @@
     position: relative;
 
     @include wrapper-tablet;
-
-    padding-bottom: 128px;
   }
 
   .weekly-good__image-mobile {
@@ -130,15 +128,26 @@
 
     @include font-set(20px, 24px, 700);
   }
+
+  .weekly-good__footer,
+  .weekly-good__content {
+    width: 50%;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .weekly-good {
     padding: 0;
     padding-top: 132px;
+    padding-bottom: 168px;
+  }
+
+  .weekly-good__wrapper {
+    @include wrapper-desktop;
   }
 
   .weekly-good__header {
+    width: 700px;
     justify-content: flex-start;
   }
 
@@ -158,12 +167,6 @@
     top: -55px;
   }
 
-  .weekly-good__content,
-  .weekly-good__footer {
-    padding-left: 175px;
-    padding-right: 584px;
-  }
-
   .weekly-good__desc {
     margin-top: 50px;
     margin-bottom: 60px;
@@ -173,9 +176,14 @@
     margin-bottom: 100px;
   }
 
-  .weekly-good__wrapper {
-    @include wrapper-desktop;
+  .weekly-good__footer,
+  .weekly-good__content {
+    padding-left: 175px;
+  }
 
-    padding-bottom: 168px;
+  .weekly-good__title {
+    width: 527px;
+
+    @include font-set(53px, 57px, 700);
   }
 }

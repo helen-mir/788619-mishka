@@ -6,13 +6,17 @@
 .order-form__group {
   padding: 0;
   margin: 0;
-  margin-bottom: 25px;
+  padding-bottom: 15px;
   border: none;
+}
+
+.order-form__list {
+  @include lists;
 }
 
 .order-form__title {
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 32px;
   color: $primary-color;
 
   @include font-set(17px, 16px, 700);
@@ -47,8 +51,9 @@
 }
 
 .order-form__button {
-  margin-top: 33px;
+  margin-top: 32px;
   margin-bottom: 55px;
+  padding-top: 13px;
   padding-left: 45px;
   padding-right: 45px;
 }
@@ -57,10 +62,12 @@
   .order-form__group {
     display: flex;
     flex-direction: row;
+    padding-top: 54px;
+    padding-bottom: 25px;
   }
 
-  .order-form__group:nth-child(even) { /*не применяется*/
-    backround-color: $secondary-color;
+  .order-form__group:nth-child(2n) {
+    background-color: $secondary-color;
   }
 
   .order-form__wrapper {
@@ -76,10 +83,13 @@
   .order-form__email,
   .order-form__tel {
     width: 501px;
+    margin-bottom: 40px;
+    padding-bottom: 14px;
+    background-color: $secondary-color;
   }
 
   .order-form__textarea {
-    width: 469px;
+    width: 501px;
   }
 
   .order-form__footer {
@@ -95,6 +105,8 @@
 
   .order-form__button {
     margin: 0;
+    padding-left: 30px;
+    padding-right: 30px;
     order: -1;
   }
 
@@ -104,17 +116,15 @@
 }
 
 @media (min-width: $desktop-width) {
-  .order-form {
-    padding-left: 64px;
+  .order-form__wrapper,
+  .order-form__footer {
+    @include wrapper-desktop;
   }
 
   .order-form__email,
-  .order-form__tel {
-    width: 700px;
-  }
-
+  .order-form__tel,
   .order-form__textarea {
-    width: 668px;
+    width: 700px;
   }
 
   .order-form__text {
@@ -122,6 +132,14 @@
   }
 
   .order-form__button {
-    margin-left: 132px;
+    margin-left: 167px;
+  }
+
+  .order-form__title {
+    padding-left: 60px;
+  }
+
+  .order-form__footer {
+    margin-top: 27px;
   }
 }

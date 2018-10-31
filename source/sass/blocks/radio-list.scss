@@ -1,5 +1,5 @@
 .radio-list__item {
-  margin-bottom: 33px;
+  margin-bottom: 29px;
 }
 
 .radio-list__label {
@@ -9,7 +9,13 @@
 }
 
 @media (min-width: $tablet-width) {
-  .checkbox-list__label {
+  .radio-list__label {
     padding-left: 81px;
+
+    @include font-set(19px, 18px, 700);
   }
+
+  .radio-list__item {
+  margin-bottom: 52px;
+}
 }

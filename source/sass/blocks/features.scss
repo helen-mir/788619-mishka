@@ -44,6 +44,8 @@
     padding-top: 57px;
     padding-right: 34px;
     padding-bottom: 56px;
+
+    @include font-set(20px, 22px, 700);
   }
 
   .features__item--friedly-materials {
@@ -73,10 +75,14 @@
 
 @media (min-width: $desktop-width) {
   .features__wrapper {
-    width: 1150px;
-    padding: 0 275px;
+    max-width: 1150px;
+    padding: 0 225px;
 
     padding-bottom: 92px;
+  }
+
+  .features__title {
+    @include font-set(53px, 57px, 700);
   }
 
   .features__list {
@@ -84,7 +90,9 @@
   }
 
   .features__item {
-    width: 300px;
+    width: 350px;
+    padding-top: 70px;
     padding-right: 50px;
+    padding-bottom: 42px;
   }
 }

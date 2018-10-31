@@ -2,6 +2,7 @@
   @include wrapper;
 
   padding-top: 78px;
+  padding-bottom: 74px;
   text-align: center;
   color: $black;
 
@@ -28,6 +29,11 @@
 @media (min-width: $tablet-width) {
   .page-header__info {
     display: block;
+    width: 100%;
+    margin: 0 auto;
+
+    @include wrapper-tablet;
+
     margin-top: 25px;
     margin-bottom: 0;
     text-align: right;
@@ -35,7 +41,7 @@
 
   .page-header__intro {
     min-height: 214px;
-    margin-top: -90px;
+    margin-top: -70px;
     color: $secondary-color--darkest;
 
     @include font-set(15px, 24px, 400);
@@ -53,8 +59,8 @@
   .page-header__title {
     @include wrapper-tablet;
 
-    padding-top: 160px;
-    padding-bottom: 315px;
+    padding-top: 46px;
+    padding-bottom: 74px;
 
     @include font-set(43px, 50px, 700);
   }
@@ -63,9 +69,6 @@
 @media (min-width: $desktop-width) {
   .page-header__intro {
     min-height: 254px;
-
-    @include wrapper-desktop;
-
     margin-bottom: -83px;
 
     &--index {
@@ -77,9 +80,16 @@
   }
 
   .page-header__title {
-    @include wrapper-desktop;
+    max-width: 1150px;
+    padding-top: 106px;
+    padding-left: 268px;
+    padding-right: 268px;
+    padding-bottom: 85px;
 
-    padding-left: 220px;
-    padding-right: 220px;
+    @include font-set(53px, 57px, 700);
+  }
+
+  .page-header__info {
+    @include wrapper-desktop;
   }
 }

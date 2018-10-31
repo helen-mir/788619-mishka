@@ -1,19 +1,30 @@
 .order__text {
+  @include wrapper;
+
   margin-top: 29px;
-  margin-bottom: 30px;
+  margin-bottom: 26px;
 
   @include font-set(13px, 24px, 400);
+
   color: $secondary-color--darkest;
 }
 
 @media (min-width: $tablet-width) {
   .order__text {
+    @include wrapper-tablet;
+
+    margin-top: 80px;
+
     @include font-set(17px, 30px, 400);
   }
 }
 
 @media (min-width: $desktop-width) {
   .order__text {
-    margin: 90px 175px 64px;
+    @include wrapper-desktop;
+
+    margin-top: 90px;
+    padding: 0 225px;
+
   }
 }

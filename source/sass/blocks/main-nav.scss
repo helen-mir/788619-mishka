@@ -49,7 +49,7 @@
 
   .main-nav__item {
     width: 167px;
-    padding-top: 25px;
+    padding-top: 16px;
     padding-bottom: 25px;
   }
 
@@ -81,6 +81,10 @@
 
 @media (min-width: $desktop-width) {
   .main-nav {
+    max-width: 1150px;
+  }
+
+  .main-nav--index {
     @include wrapper-desktop;
   }
 

@@ -1,3 +1,7 @@
+.checkbox-list__item {
+  margin-bottom: 44px;
+}
+
 .checkbox-list__label {
   padding-left: 62px;
 
@@ -12,13 +16,15 @@
   }
 
   .checkbox-list__item {
-    width: 201px;
+    width: 230px;
     margin-right: 20px;
-    margin-bottom: 33px;
+    margin-bottom: 61px;
   }
 
   .checkbox-list__label {
     padding-left: 81px;
+
+    @include font-set(19px, 18px, 700);
   }
 }
 
