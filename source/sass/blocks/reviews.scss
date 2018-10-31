@@ -96,6 +96,8 @@
 @media (min-width: $desktop-width) {
   .reviews {
     @include wrapper-desktop;
+
+    background-image: none;
   }
 
   .reviews__wrapper {
@@ -103,6 +105,10 @@
     padding: 0;
     padding-top: 80px;
     padding-left: 175px;
+
+    background-image: url("../img/review@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: left;
   }
 
   .reviews__button {

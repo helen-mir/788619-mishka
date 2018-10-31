@@ -104,7 +104,7 @@
     width: 315px;
   }
 
-  .catalog__item:not(nth-child(3n)) {
+  .catalog__item:not(:nth-child(3n)) {
     margin-right: 52px;
   }
 
