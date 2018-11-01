@@ -1,10 +1,23 @@
 .weekly-good {
+  position: relative;
   padding-top: 33px;
   padding-bottom: 76px;
 }
 
 .weekly-good__wrapper {
   @include wrapper;
+}
+
+.weekly-good__wrapper::after {
+  content: "";
+  position: absolute;
+  bottom: 30px;
+  left: 0;
+  width: 100%;
+  height: 6px;
+  background-image: url(../img/bg-zigzag-line.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .weekly-good__title {
@@ -103,6 +116,11 @@
     @include wrapper-tablet;
   }
 
+  .weekly-good__wrapper::after {
+    height: 18px;
+    bottom: -75px;
+  }
+
   .weekly-good__image {
     display: block;
     position: absolute;
@@ -136,6 +154,11 @@
 
   .weekly-good__wrapper {
     @include wrapper-desktop;
+  }
+
+  .weekly-good__wrapper::after {
+    width: 1050px;
+    left: 50px;
   }
 
   .weekly-good__header {

@@ -15,10 +15,77 @@
 }
 
 .features__item {
+  position: relative;
   padding-top: 58px;
   padding-bottom: 32px;
 
   @include font-set(17px, 20px, 700);
+}
+
+.features__item--friedly-materials::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 32px;
+  height: 37px;
+  background-image: url(../img/icon-feature-flower.svg);
+  background-repeat: no-repeat;
+}
+
+.features__item--scandinavian-style::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 47px;
+  height: 27px;
+  background-image: url(../img/icon-feature-money.svg);
+  background-repeat: no-repeat;
+}
+
+.features__item--increases-like::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 34px;
+  height: 27px;
+  background-image: url(../img/icon-feature-heart.svg);
+  background-repeat: no-repeat;
+}
+
+.features__item--handmade::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 34px;
+  height: 34px;
+  background-image: url(../img/icon-feature-ball.svg);
+  background-repeat: no-repeat;
+}
+
+.features__item--support::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 55px;
+  height: 23px;
+  background-image: url(../img/icon-feature-rocket.svg);
+  background-repeat: no-repeat;
+}
+
+.features__item--gift-wrap::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 33px;
+  height: 32px;
+  background-image: url(../img/icon-feature-gift.svg);
+  background-repeat: no-repeat;
 }
 
 @media (min-width: $tablet-width) {
