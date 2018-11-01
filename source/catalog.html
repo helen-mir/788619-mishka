@@ -2,6 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Каталог Mishka</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
@@ -11,27 +12,34 @@
       <div class="page-header__top">
         <nav class="main-nav">
           <button class="main-nav__toggle" type="button" aria-label="Открыть меню"></button>
-          <div class="main-nav__wrapper">
-            <a class="main-nav__logo">
-              <img class="main-nav__logo-image" src="img/logo-mobile.svg" alt="Логотип">
-            </a>
-            <ul class="main-nav__list">
-              <li class="main-nav__item">
-                <a href="catalog.html">Каталог товаров</a>
-              </li>
-              <li class="main-nav__item">
-                <a href="#">Вязание на заказ</a>
-              </li>
-              <li class="main-nav__item main-nav__item--search">
-                <a href="#">Поиск по сайту</a>
-              </li>
-              <li class="main-nav__item main-nav__item--cart">
-                <a href="#">Корзина</a>
-              </li>
-            </ul>
-          </div>
+          <ul class="main-nav__list">
+            <li class="main-nav__item main-nav__item--logo">
+              <a href="#" class="main-nav__logo">
+                <img class="main-nav__logo-image" src="img/logo-mobile.svg" alt="Логотип">
+              </a>
+            </li>
+            <li class="main-nav__item">
+              <a href="catalog.html">Каталог товаров</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="form.html">Вязание на заказ</a>
+            </li>
+            <li class="main-nav__item main-nav__item--search">
+              <a href="#">Поиск</a>
+            </li>
+            <li class="main-nav__item main-nav__item--cart">
+              <a href="#">Корзина: пока пуста</a>
+            </li>
+            <li class="main-nav__item main-nav__item--new">
+              <a href="#">Новые поступления</a>
+            </li>
+            <li class="main-nav__item main-nav__item--sale">
+              <a href="#">Распродажа</a>
+            </li>
+          </ul>
         </nav>
         <div class="page-header__intro">
+          <p class="page-header__info">Бесплатная доставка по России</p>
           <h1 class="page-header__title">Каталог товаров</h1>
         </div>
       </div>
@@ -47,14 +55,14 @@
             </a>
             <div class="catalog-item__info">
               <div class="catalog-item__header">
-                <h3 class="catalog-item__subtitle">
-                  <a class="catalog-item__subtitle-link">Зайчик-попрыгайчик</a>
+                <h3 class="catalog-item__title">
+                  <a class="catalog-item__title-link">Зайчик-попрыгайчик</a>
                 </h3>
                 <p class="catalog-item__desc">Рост 30см, вес 200 г</p>
               </div>
               <div class="catalog-item__footer">
                 <p class="catalog-item__price">1200 руб.</p>
-                <a class="catalog-item__add" href="#" aria-label="Добавить в корзину"></a>
+                <a class="catalog-item__add" href="add-cart.html" aria-label="Добавить в корзину"></a>
               </div>
             </div>
           </li>
@@ -64,14 +72,14 @@
             </a>
             <div class="catalog-item__info">
               <div class="catalog-item__header">
-                <h3 class="catalog-item__subtitle">
-                  <a class="catalog-item__subtitle-link">Корзинка для белья</a>
+                <h3 class="catalog-item__title">
+                  <a class="catalog-item__title-link">Корзинка для белья</a>
                 </h3>
                 <p class="catalog-item__desc">Диаметр 15 см, высота 10 см</p>
               </div>
               <div class="catalog-item__footer">
                 <p class="catalog-item__price">690 руб.</p>
-                <a class="catalog-item__add" href="#" aria-label="Добавить в корзину"></a>
+                <a class="catalog-item__add" href="add-cart.html" aria-label="Добавить в корзину"></a>
               </div>
             </div>
           </li>
@@ -81,14 +89,14 @@
             </a>
             <div class="catalog-item__info">
               <div class="catalog-item__header">
-                <h3 class="catalog-item__subtitle">
-                  <a class="catalog-item__subtitle-link">Большая корзинка для игрушек</a>
+                <h3 class="catalog-item__title">
+                  <a class="catalog-item__title-link">Большая корзинка для&nbsp;игрушек</a>
                 </h3>
                 <p class="catalog-item__desc">Диаметр 30 см, высота 30 см</p>
               </div>
               <div class="catalog-item__footer">
                 <p class="catalog-item__price">1500 руб.</p>
-                <a class="catalog-item__add" href="#" aria-label="Добавить в корзину"></a>
+                <a class="catalog-item__add" href="add-cart.html" aria-label="Добавить в корзину"></a>
               </div>
             </div>
           </li>
@@ -97,21 +105,26 @@
 
       <section class="production">
         <div class="production__wrapper">
-          <h2 class="production__title">Процесс производства</h2>
-        </div>
-        <div class="production__video">
-          <img class="production__image" src="#" alt="Видео производства">
-          <button class="production__button-play"></button>
-        </div>
-        <div class="production__footer">
-          <p class="production__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
-          <a class="production__button button" href="#">Сделать заказ</a>
+          <div class="production__wrapper-title">
+            <h2 class="production__title">Процесс производства</h2>
+          </div>
+          <div class="production__video">
+            <img class="production__image" src="#" alt="Видео производства">
+            <button class="production__button-play"></button>
+          </div>
+          <div class="production__footer">
+            <p class="production__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+            <a class="production__button button" href="#">Сделать заказ</a>
+          </div>
         </div>
       </section>
     </main>
 
     <footer class="page-footer">
       <div class="page-footer__wrapper">
+        <a class="page-footer__logo" href="index.html">
+          <img class="page-footer__logo-image" src="img/logo-footer.svg" alt="Логотип">
+        </a>
         <div class="page-footer__social social">
           <ul class="social__list">
             <li class="social__item">

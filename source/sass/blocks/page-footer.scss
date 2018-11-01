@@ -1,0 +1,38 @@
+.page-footer {
+  background: $secondary-color;
+}
+
+.page-footer__wrapper {
+  @include wrapper;
+}
+
+.page-footer__logo {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer__logo {
+    display: block;
+    width: 180px;
+    margin-top: 50px;
+    margin-bottom: 56px;
+  }
+
+  .page-footer__wrapper {
+    display: flex;
+    justify-content: space-between;
+
+    @include wrapper-tablet;
+  }
+
+  .page-footer__social,
+  .page-footer__copyright {
+    width: 190px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer__wrapper {
+    @include wrapper-desktop;
+  }
+}

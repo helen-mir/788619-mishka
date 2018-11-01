@@ -1,4 +1,12 @@
+.features__wrapper {
+  @include wrapper;
+}
+
 .features__title {
+  display: block;
+  margin: 0;
+  margin-bottom: 30px;
+
   @include font-set(25px, 30px, 700);
 }
 
@@ -7,5 +15,84 @@
 }
 
 .features__item {
+  padding-top: 58px;
+  padding-bottom: 32px;
+
   @include font-set(17px, 20px, 700);
+}
+
+@media (min-width: $tablet-width) {
+  .features__wrapper {
+    @include wrapper-tablet;
+
+    padding-bottom: 60px;
+  }
+
+  .features__title {
+    @include font-set(43px, 50px, 700);
+  }
+
+
+  .features__list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 668px;
+  }
+
+  .features__item {
+    width: 300px;
+    padding-top: 57px;
+    padding-right: 34px;
+    padding-bottom: 56px;
+
+    @include font-set(20px, 22px, 700);
+  }
+
+  .features__item--friedly-materials {
+    order: 0;
+  }
+
+  .features__item--handmade {
+    order: 1;
+  }
+
+  .features__item--scandinavian-style {
+    order: 2;
+  }
+
+  .features__item--support {
+    order: 3;
+  }
+
+  .features__item--increases-like {
+    order: 4;
+  }
+
+  .features__item--gift-wrap {
+    order: 5;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .features__wrapper {
+    max-width: 1150px;
+    padding: 0 225px;
+
+    padding-bottom: 92px;
+  }
+
+  .features__title {
+    @include font-set(53px, 57px, 700);
+  }
+
+  .features__list {
+    width: 700px;
+  }
+
+  .features__item {
+    width: 350px;
+    padding-top: 70px;
+    padding-right: 50px;
+    padding-bottom: 42px;
+  }
 }

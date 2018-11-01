@@ -1,9 +1,14 @@
+.category {
+  background-color: #fbfbfb;
+}
+
 .category__list {
   @include lists;
-  @include wrapper;
 }
 
 .category__item {
+  padding: 30px 30px;
+
   &--interior-items {
     background-color: $primary-color;
   }
@@ -14,7 +19,32 @@
 }
 
 .category__link {
+  width: 130px;
   color: $white;
 
   @include font-set(19px, 24px, 700);
+}
+
+@media (min-width: $tablet-width) {
+  .category__list {
+    display: flex;
+    margin: 0 auto;
+    width: 100%;
+
+    @include wrapper-tablet;
+  }
+
+  .category__item {
+    width: 334px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .category__list {
+    @include wrapper-desktop;
+  }
+
+  .category__item {
+    width: 525px;
+  }
 }

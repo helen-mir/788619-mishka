@@ -1,20 +1,62 @@
 html {
   height: 100%;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
 }
 
 body {
-  margin: 0;
   min-width: 320px;
-  min-height: 100vh;
+  margin: 0;
+  padding: 0;
   display: flex;
   flex-direction: column;
   word-wrap: break-word;
+
   font-family: $font-primary;
   font-size: $font-size;
   color: $black;
+
   background-color: $color-bg;
 }
 
 a {
+  display: block;
   text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+@media (min-width: $tablet-width) {
+  body {
+    min-width: $tablet-width;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  body {
+    min-width: $desktop-width;
+  }
 }

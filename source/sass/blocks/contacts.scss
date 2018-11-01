@@ -1,7 +1,154 @@
+.contacts__wrapper {
+  @include wrapper;
+}
+
 .contacts__title {
+  display: block;
+  margin-bottom: 43px;
+
   @include font-set(18px, 30px, 700);
 }
 
+.contacts__list {
+  @include lists;
+}
+
+.contacts__item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+  color: $secondary-color--darkest;
+}
+
+.contacts__text,
+.contacts__link,
+.contacts__address {
+  margin: 0;
+  padding-bottom: 5px;
+}
+
+.contacts__text {
+  width: 50px;
+}
+
+.contacts__link,
+.contacts__address {
+  width: 183px;
+}
+
 .contacts__link {
-  color: $black;
+  color: $secondary-color--darkest;
+  border-bottom: 1px solid #62d1ba;
+}
+
+.contacts__map {
+  position: relative;
+  width: 100%;
+  height: 457px;
+  margin-bottom: 40px;
+}
+
+.contacts__map iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.contacts__map img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+.contacts__button {
+  padding-left: 51px;
+  padding-right: 51px;
+  margin: 0 auto 40px;
+}
+
+@media (min-width: $tablet-width) {
+  .contacts__wrapper {
+    @include wrapper-tablet;
+  }
+
+  .contacts__title {
+    @include font-set(43px, 50px, 700);
+
+    margin-bottom: 62px;
+  }
+
+  .contacts__list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .contacts__item {
+    width: 290px;
+
+    @include font-set(17px, 30px, 400);
+  }
+
+  .contacts__button {
+    padding-top: 14px;
+    padding-left: 38px;
+    padding-right: 39px;
+    margin-left: 219px;
+    margin-right: 219px;
+    margin-bottom: 57px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contacts__wrapper {
+    position: relative;
+
+    @include wrapper-desktop;
+
+    padding-top: 80px;
+    padding-bottom: 100px;
+  }
+
+  .contacts__list {
+    flex-direction: column;
+    margin-bottom: 51px;
+  }
+
+  .contacts__list,
+  .contacts__title {
+    width: 50%;
+    padding-left: 175px;
+  }
+
+  .contacts__item {
+    width: 309px;
+    margin-bottom: 26px;
+  }
+
+  .contacts__text {
+    width: 55px;
+  }
+
+  .contacts__link,
+  .contacts__address {
+    width: 230px;
+  }
+
+  .contacts__title {
+    margin-bottom: 49px;
+
+    @include font-set(53px, 57px, 700);
+  }
+
+  .contacts__button {
+    margin: 0;
+    margin-left: 175px;
+  }
+
+  .contacts__map {
+    position: absolute;
+    top: 80px;
+    left: 525px;
+  }
 }

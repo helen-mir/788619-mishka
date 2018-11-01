@@ -2,6 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Вязание на заказ</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
@@ -11,27 +12,34 @@
       <div class="page-header__top">
         <nav class="main-nav">
           <button class="main-nav__toggle" type="button" aria-label="Открыть меню"></button>
-          <div class="main-nav__wrapper">
-            <a class="main-nav__logo">
-              <img class="main-nav__logo-image" src="img/logo-mobile.svg" alt="Логотип">
-            </a>
-            <ul class="main-nav__list">
-              <li class="main-nav__item">
-                <a href="catalog.html">Каталог товаров</a>
-              </li>
-              <li class="main-nav__item">
-                <a href="#">Вязание на заказ</a>
-              </li>
-              <li class="main-nav__item main-nav__item--search">
-                <a href="#">Поиск по сайту</a>
-              </li>
-              <li class="main-nav__item main-nav__item--cart">
-                <a href="#">Корзина</a>
-              </li>
-            </ul>
-          </div>
+          <ul class="main-nav__list">
+            <li class="main-nav__item main-nav__item--logo">
+              <a href="#" class="main-nav__logo">
+                <img class="main-nav__logo-image" src="img/logo-mobile.svg" alt="Логотип">
+              </a>
+            </li>
+            <li class="main-nav__item">
+              <a href="catalog.html">Каталог товаров</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#">Вязание на заказ</a>
+            </li>
+            <li class="main-nav__item main-nav__item--search">
+              <a href="#">Поиск</a>
+            </li>
+            <li class="main-nav__item main-nav__item--cart">
+              <a href="#">Корзина: пока пуста</a>
+            </li>
+            <li class="main-nav__item main-nav__item--new">
+              <a href="#">Новые поступления</a>
+            </li>
+            <li class="main-nav__item main-nav__item--sale">
+              <a href="#">Распродажа</a>
+            </li>
+          </ul>
         </nav>
         <div class="page-header__intro">
+          <p class="page-header__info">Бесплатная доставка по России</p>
           <h1 class="page-header__title">Вязание на заказ</h1>
         </div>
       </div>
@@ -41,7 +49,7 @@
 
       <section class="order">
         <h2 class="order__title visually-hidden">Форма заказа</h2>
-        <p class="order_text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
+        <p class="order__text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
         <form class="order__form order-form" method="get" action="https://echo.htmlacademy.ru">
           <fieldset class="order-form__group">
             <div class="order-form__wrapper">
@@ -113,8 +121,6 @@
               <h2 class="order-form__title">Тел</h2>
               <input class="order-form__tel" type="tel" name="tel" pattern="+7-[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" required placeholder="+7 ХХХ ХХХ ХХ ХХ*">
             </div>
-          </fieldset>
-          <fieldset class="order-form__group">
             <div class="order-form__wrapper">
               <h2 class="order-form__title">E-mail</h2>
               <input class="order-form__email" type="email" name="email" required placeholder="Ваш Email*">
@@ -128,7 +134,7 @@
           </fieldset>
           <div class="order-form__footer">
             <small class="order-form__text"><sup>*</sup>Поля обязательны для заполнения</small>
-            <button class="order-form_button button" type="submit">Отправить заказ</button>
+            <button class="order-form__button button" type="submit">Отправить заказ</button>
           </div>
         </form>
       </section>
@@ -136,6 +142,9 @@
 
     <footer class="page-footer">
       <div class="page-footer__wrapper">
+        <a class="page-footer__logo" href="index.html">
+          <img class="page-footer__logo-image" src="img/logo-footer.svg" alt="Логотип">
+        </a>
         <div class="page-footer__social social">
           <ul class="social__list">
             <li class="social__item">

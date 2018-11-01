@@ -1,3 +1,21 @@
+.copyright {
+  display: flex;
+  margin: 0 38px;
+
+  @include wrapper;
+
+  text-align: center;
+}
+
 .copyright__text {
   @include font-set(19px, 18px, 700);
+
+  margin-top: 27px;
+  margin-bottom: 31px;
+}
+
+@media (min-width: $tablet-width) {
+  .copyright__text {
+    margin: 57px 0;
+  }
 }
