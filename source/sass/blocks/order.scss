@@ -20,10 +20,14 @@
 }
 
 @media (min-width: $desktop-width) {
+  .order {
+    padding-top: 132px;
+  }
+
   .order__text {
     @include wrapper-desktop;
 
-    margin-top: 90px;
+    margin-top: 0;
     padding: 0 225px;
 
   }

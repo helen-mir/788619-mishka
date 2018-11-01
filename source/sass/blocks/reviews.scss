@@ -100,23 +100,19 @@
 
 @media (min-width: $desktop-width) {
   .reviews {
-    padding-top: 0;
+    margin: 0 auto;
+    padding: 0 50px;
+    width: 1150px;
     background-image: none;
   }
 
   .reviews__wrapper {
     padding-top: 80px;
-
-    @include wrapper-desktop;
+    padding-left: 175px;
 
     background-image: url("../img/review@1x.jpg");
     background-repeat: no-repeat;
     background-position: left;
-  }
-
-  .reviews__title,
-  .reviews__list {
-    padding-left: 175px;
   }
 
   .reviews__title {

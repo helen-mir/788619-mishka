@@ -81,6 +81,8 @@
 @media (min-width: $desktop-width) {
   .production__wrapper {
     position: relative;
+    max-width: 1150px;
+    align-items: flex-end;
   }
 
   .production__video {
@@ -91,7 +93,7 @@
 
   .production__wrapper-title,
   .production__footer {
-    margin-left: auto;
+    width: 368px;
     padding-left: 60px;
     padding-right: 60px;
   }

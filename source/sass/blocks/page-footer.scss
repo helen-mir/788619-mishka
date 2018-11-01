@@ -11,16 +11,20 @@
 }
 
 @media (min-width: $tablet-width) {
+  .page-footer {
+    padding-top: 51px;
+    padding-bottom: 58px;
+  }
+
   .page-footer__logo {
     display: block;
     width: 180px;
-    margin-top: 50px;
-    margin-bottom: 56px;
   }
 
   .page-footer__wrapper {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 
     @include wrapper-tablet;
   }
