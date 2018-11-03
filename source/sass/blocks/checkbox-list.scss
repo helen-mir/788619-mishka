@@ -3,9 +3,38 @@
 }
 
 .checkbox-list__label {
+  position: relative;
   padding-left: 62px;
+  padding-bottom: 18px;
 
   @include font-set(17px, 18px, 700);
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 40px;
+    height: 39px;
+    border: 2px solid $secondary-color--darkest;
+    cursor: pointer;
+  }
+}
+
+.checkbox-list__input {
+  &:checked + .checkbox-list__label::after {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 8px;
+    display: block;
+    width: 23px;
+    height: 12px;
+    border-left: 2px solid $black;
+    border-bottom: 2px solid $black;
+    transform: rotate(-45deg);
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -19,11 +48,10 @@
     width: 230px;
     margin-right: 20px;
     margin-bottom: 61px;
+    padding-left: 81px;
   }
 
   .checkbox-list__label {
-    padding-left: 81px;
-
     @include font-set(19px, 18px, 700);
   }
 }

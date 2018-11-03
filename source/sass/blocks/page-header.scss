@@ -34,14 +34,14 @@
 
     @include wrapper-tablet;
 
-    margin-top: 25px;
+    margin-top: 16px;
     margin-bottom: 0;
     text-align: right;
   }
 
   .page-header__intro {
     min-height: 214px;
-    margin-top: -70px;
+    margin-top: -90px;
     color: $secondary-color--darkest;
 
     @include font-set(15px, 24px, 400);
@@ -52,14 +52,14 @@
       min-height: 627px;
       background-image: url("../img/hero-tablet@1x.jpg");
       background-repeat: no-repeat;
-      background-position: center;
+      background-position: top;
     }
   }
 
   .page-header__title {
     @include wrapper-tablet;
 
-    padding-top: 46px;
+    padding-top: 112px;
     padding-bottom: 74px;
 
     @include font-set(43px, 50px, 700);

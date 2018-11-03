@@ -16,10 +16,23 @@
 }
 
 .production__title {
+  position: relative;
   display: block;
   margin: 0;
 
   @include font-set(17px, 24px, 700);
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 13px;
+    left: -60px;
+    width: 32px;
+    height: 22px;
+    background-image: url(../img/icon-video.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
 }
 
 .production__text {
@@ -61,6 +74,10 @@
 
   .production__title {
     @include font-set(20px, 24px, 700);
+
+    &::before {
+      bottom: 0;
+    }
   }
 
   .production__button {
@@ -95,11 +112,25 @@
   .production__footer {
     width: 368px;
     padding-left: 60px;
+  }
+
+  .production__footer {
     padding-right: 60px;
+  }
+
+  .production__wrapper-title {
+    padding-top: 101px;
+    padding-right: 140px;
   }
 
   .production__button {
     padding-left: 45px;
     padding-right: 45px;
   }
+
+  .production__title::before {
+    bottom: 71px;
+    left: 0;
+  }
 }
+

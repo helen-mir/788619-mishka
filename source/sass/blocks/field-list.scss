@@ -20,6 +20,10 @@
   border-bottom: 2px solid $black;
 }
 
+.field-list__input::placeholder {
+  color: rgba(68, 68, 68, 0.3);
+}
+
 .field-list__label {
   display: block;
   margin-bottom: 8px;

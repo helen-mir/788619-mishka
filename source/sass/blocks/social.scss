@@ -1,3 +1,25 @@
+.social {
+  width: 141px;
+  margin: 0 auto;
+  padding-bottom: 27px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
 .social__list {
+  display: flex;
+  align-items: center;
+  width: 141px;
+
   @include lists;
+}
+
+.social__item {
+  margin-right: 41px;
+}
+
+@media (min-width: $tablet-width) {
+  .social {
+    padding: 0;
+    border: none;
+  }
 }

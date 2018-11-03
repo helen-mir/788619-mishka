@@ -14,7 +14,7 @@
           <button class="main-nav__toggle" type="button" aria-label="Открыть меню"></button>
           <ul class="main-nav__list">
             <li class="main-nav__item main-nav__item--logo">
-              <a href="#" class="main-nav__logo">
+              <a href="index.html" class="main-nav__logo">
                 <img class="main-nav__logo-image" src="img/logo-mobile.svg" alt="Логотип">
               </a>
             </li>
@@ -51,7 +51,7 @@
         <h2 class="order__title visually-hidden">Форма заказа</h2>
         <p class="order__text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
         <form class="order__form order-form" method="get" action="https://echo.htmlacademy.ru">
-          <fieldset class="order-form__group">
+          <fieldset class="order-form__group order-form__group--type ">
             <div class="order-form__wrapper">
               <h2 class="order-form__title">Тип</h2>
               <ul class="order-form__list radio-list">
@@ -66,7 +66,7 @@
               </ul>
             </div>
           </fieldset>
-          <fieldset class="order-form__group">
+          <fieldset class="order-form__group order-form__group--color">
             <div class="order-form__wrapper">
               <h2 class="order-form__title">Цвет</h2>
               <ul class="order-form__list checkbox-list">
@@ -97,7 +97,7 @@
               </ul>
             </div>
           </fieldset>
-          <fieldset class="order-form__group">
+          <fieldset class="order-form__group order-form__group--name">
             <div class="order-form__wrapper">
               <h2 class="order-form__title">Фио</h2>
               <ul class="order-form__list field-list">
@@ -116,17 +116,19 @@
               </ul>
             </div>
           </fieldset>
-          <fieldset class="order-form__group">
+          <fieldset class="order-form__group order-form__group--tel">
             <div class="order-form__wrapper">
               <h2 class="order-form__title">Тел</h2>
               <input class="order-form__tel" type="tel" name="tel" pattern="+7-[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" required placeholder="+7 ХХХ ХХХ ХХ ХХ*">
             </div>
+          </fieldset>
+          <fieldset class="order-form__group order-form__group--email">
             <div class="order-form__wrapper">
               <h2 class="order-form__title">E-mail</h2>
               <input class="order-form__email" type="email" name="email" required placeholder="Ваш Email*">
             </div>
           </fieldset>
-          <fieldset class="order-form__group">
+          <fieldset class="order-form__group order-form__group--text">
             <div class="order-form__wrapper">
               <h2 class="order-form__title">Доп</h2>
               <textarea class="order-form__textarea" name="wishes" placeholder="Опишите все ваши пожелания к заказу"></textarea>
@@ -160,7 +162,7 @@
         </div>
         <div class="page-footer__copyright copyright">
           <b class="copyright__text">Разработано</b>
-          <a class="copyright__link" href="#" aria-label="HTML Academy"></a>
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="HTML Academy"></a>
         </div>
       </div>
     </footer>

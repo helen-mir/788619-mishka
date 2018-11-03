@@ -6,8 +6,28 @@
 .order-form__group {
   padding: 0;
   margin: 0;
-  padding-bottom: 15px;
+  margin-bottom: 27px;
   border: none;
+
+  &--color {
+    margin-bottom: 9px;
+  }
+
+  &--name {
+    margin-bottom: 16px;
+  }
+
+  &--tel {
+    margin-bottom: 32px;
+  }
+
+  &--email {
+    margin-bottom: 30px;
+  }
+
+  &--text {
+    margin-bottom: 14px;
+  }
 }
 
 .order-form__list {
@@ -18,20 +38,20 @@
   display: flex;
   align-items: center;
   margin: 0;
-  margin-bottom: 32px;
+  margin-bottom: 20px;
   color: $primary-color;
 
   @include font-set(17px, 16px, 700);
   text-transform: uppercase;
-}
 
-.order-form__title::after {
+  &::after {
     content: "";
     width: 200px;
     height: 1px;
     margin-left: 25px;
     flex-grow: 1;
     background-color: $primary-color;
+  }
 }
 
 .order-form__text {
@@ -55,6 +75,28 @@
 .order-form__email,
 .order-form__tel {
   height: 34px;
+}
+
+.order-form__tel {
+  position: relative;
+  margin-bottom: 20px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 25px;
+    height: 24px;
+    background-image: url(../img/icon-phone.svg);
+    background-repeat: no-repeat;
+  }
+}
+
+.order-form__tel::placeholder,
+.order-form__email::placeholder,
+.order-form__textarea::placeholder {
+  color: rgba(68, 68, 68, 0.3);
 }
 
 .order-form__textarea {
