@@ -1,6 +1,6 @@
 .weekly-good {
   padding-top: 33px;
-  padding-bottom: 76px;
+  padding-bottom: 70px;
 }
 
 .weekly-good__wrapper {
@@ -25,15 +25,15 @@
   @include font-set(25px, 30px, 700);
 
   margin: 0;
-  margin-bottom: 9px;
+  margin-bottom: 3px;
 }
 
 .weekly-good__button {
-  padding: 18px 83px;
+  padding: 13px 83px;
 }
 
 .weekly-good__header {
-  margin-bottom: 31px;
+  margin-bottom: 23px;
 }
 
 .weekly-good__subtitle {
@@ -47,7 +47,7 @@
 .weekly-good__desc {
   display: block;
   margin: 0;
-  margin-bottom: 35px;
+  margin-bottom: 20px;
 
   @include font-set(15px, 24px, 400);
   color: $secondary-color--darkest;
@@ -76,7 +76,7 @@
 }
 
 .weekly-good__image {
-  margin-bottom: 29px;
+  margin-bottom: 25px;
 }
 
 .weekly-good__price {
@@ -90,14 +90,15 @@
 
 @media (min-width: $tablet-width) {
   .weekly-good {
-    padding-top: 55px;
-    padding-bottom: 128px;
+    padding-top: 48px;
+    padding-bottom: 121px;
   }
 
   .weekly-good__header {
     display: flex;
     justify-content: space-between;
     width: 668px;
+    margin-bottom: 49px;
   }
 
   .weekly-good__subtitle {
@@ -135,6 +136,9 @@
   }
 
   .weekly-good__price {
+    display: block;
+    width: 146px;
+    margin: 0 auto;
     margin-bottom: 34px;
 
     @include font-set(20px, 24px, 700);
@@ -144,21 +148,38 @@
   .weekly-good__content {
     width: 50%;
   }
+
+  .weekly-good__desc {
+    padding-right: 38px;
+    margin-bottom: 38px;
+
+    @include font-set(17px, 30px, 400);
+  }
+
+  .weekly-good__footer {
+    padding-right: 42px;
+  }
+
+  .weekly-good__table {
+    margin-bottom: 61px;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .weekly-good {
     padding: 0;
-    padding-top: 132px;
-    padding-bottom: 168px;
+    padding-top: 124px;
+    padding-bottom: 159px;
   }
 
   .weekly-good__wrapper {
     @include wrapper-desktop;
 
     &::after {
-      width: 1050px;
-      left: 50px;
+      width: 1040px;
+      left: 52px;
+      bottom: -99px;
+      height: 21px;
     }
   }
 
@@ -168,7 +189,9 @@
   }
 
   .weekly-good__subtitle {
-    margin-right: 65px;
+    margin-top: 10px;
+    margin-left: 47px;
+    margin-right: 53px;
     order: -1;
   }
 
@@ -180,12 +203,12 @@
   }
 
   .weekly-good__desc {
-    margin-top: 50px;
+    margin-top: 47px;
     margin-bottom: 60px;
   }
 
   .weekly-good__table {
-    margin-bottom: 100px;
+    margin-bottom: 115px;
   }
 
   .weekly-good__footer,
@@ -197,5 +220,9 @@
     width: 527px;
 
     @include font-set(53px, 57px, 700);
+  }
+
+  .weekly-good__desc {
+    margin-bottom: 49px;
   }
 }

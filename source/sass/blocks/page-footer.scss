@@ -21,11 +21,11 @@
   .page-footer__logo {
     display: block;
     width: 105px;
+    margin-right: 158px;
   }
 
   .page-footer__wrapper {
     display: flex;
-    justify-content: space-between;
     align-items: center;
 
     @include wrapper-tablet;
@@ -40,5 +40,9 @@
 @media (min-width: $desktop-width) {
   .page-footer__wrapper {
     @include wrapper-desktop;
+  }
+
+  .page-footer__logo {
+    margin-right: 350px;
   }
 }

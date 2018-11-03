@@ -8,7 +8,7 @@
 
 .category__item {
   position: relative;
-  padding: 30px 30px;
+  padding: 27px 30px;
 
   &--interior-items {
     background-color: $primary-color;
@@ -83,11 +83,21 @@
   }
 
   .category__list::after {
+    width: 1050px;
     bottom: -1px;
-    height: 18px;
+    left: 21px;
+    height: 20px;
+    background-size: auto;
   }
 
   .category__item {
     width: 525px;
+    padding-top: 29px;
+    padding-left: 38px;
+    padding-bottom: 28px;
+  }
+
+  .category__link {
+    @include font-set(20px, 30px, 700);
   }
 }

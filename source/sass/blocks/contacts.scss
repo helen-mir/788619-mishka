@@ -4,7 +4,7 @@
 
 .contacts__title {
   display: block;
-  margin-bottom: 43px;
+  margin-bottom: 33px;
 
   @include font-set(18px, 30px, 700);
 }
@@ -15,7 +15,7 @@
 
 .contacts__item {
   display: flex;
-  margin-bottom: 40px;
+  margin-bottom: 38px;
   color: $secondary-color--darkest;
 }
 
@@ -28,6 +28,10 @@
 
 .contacts__text {
   margin-right: 31px;
+}
+
+.contacts__address {
+  line-height: 27px;
 }
 
 .contacts__link {
@@ -50,7 +54,7 @@
   position: relative;
   width: 100%;
   height: 457px;
-  margin-bottom: 40px;
+  margin-bottom: 39px;
 }
 
 .contacts__map iframe {
@@ -71,12 +75,17 @@
 }
 
 .contacts__button {
+  padding-top: 13px;
   padding-left: 51px;
-  padding-right: 51px;
+  padding-right: 56px;
   margin: 0 auto 40px;
 }
 
 @media (min-width: $tablet-width) {
+  .contacts {
+    padding-top: 104px;
+  }
+
   .contacts__wrapper {
     @include wrapper-tablet;
   }
@@ -87,7 +96,7 @@
 
     @include font-set(43px, 50px, 700);
 
-    margin-bottom: 62px;
+    margin-bottom: 53px;
 
     &::after {
       content: "";
@@ -104,13 +113,17 @@
 
   .contacts__list {
     display: flex;
-    justify-content: space-between;
+    margin-bottom: 17px;
   }
 
   .contacts__item {
-    width: 290px;
+    width: 297px;
 
     @include font-set(17px, 30px, 400);
+  }
+
+  .contacts__item:first-child {
+    margin-right: 37px;
   }
 
   .contacts__button {
@@ -133,10 +146,15 @@
 }
 
 @media (min-width: $desktop-width) {
+  .contacts {
+    padding-top: 185px;
+    padding-bottom: 110px;
+  }
+
   .contacts__wrapper {
     position: relative;
     max-width: 1150px;
-    padding: 80px 225px 100px;
+    padding: 0 225px;
   }
 
   .contacts__list {
@@ -171,7 +189,7 @@
 
   .contacts__map {
     position: absolute;
-    top: 80px;
+    top: 2923px;
     right: 50px;
     width: 525px;
   }

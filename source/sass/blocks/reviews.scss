@@ -1,6 +1,6 @@
 .reviews {
-  padding-top: 30px;
-  padding-bottom: 45px;
+  padding-top: 24px;
+  padding-bottom: 71px;
 }
 
 .reviews__wrapper {
@@ -11,7 +11,7 @@
   &::after {
     content: "";
     position: absolute;
-    bottom: -40px;
+    bottom: -48px;
     left: 0;
     width: 100%;
     height: 6px;
@@ -23,14 +23,14 @@
 
 .reviews__title {
   margin: 0;
-  margin-bottom: 40px;
+  margin-bottom: 24px;
 
   @include font-set(25px, 30px, 700);
 }
 
 .author__name {
   display: block;
-  margin-bottom: 14px;
+  margin-bottom: 10px;
 
   @include font-set(17px, 24px, 700);
 
@@ -45,8 +45,9 @@
 }
 
 .reviews__button {
-  padding-left: 79px;
-  padding-right: 79px;
+  padding-top: 16px;
+  padding-left: 80px;
+  padding-right: 80px;
 }
 
 .reviews__item {
@@ -55,7 +56,7 @@
 
 .reviews__text {
   margin: 0;
-  margin-bottom: 40px;
+  margin-bottom: 28px;
   color: $secondary-color--darkest;
 
   @include font-set(15px, 30px, 400);
@@ -67,7 +68,7 @@
 
 .slider__controls {
   display: flex;
-  margin-bottom: 40px;
+  margin-bottom: 37px;
 }
 
 .slider__button {
@@ -90,8 +91,8 @@
 
 @media (min-width: $tablet-width) {
   .reviews {
-    padding-top: 78px;
-    padding-bottom: 52px;
+    padding-top: 75px;
+    padding-bottom: 25px;
 
     background-image: url("../img/review@1x.jpg");
     background-repeat: no-repeat;
@@ -105,8 +106,8 @@
     @include wrapper-tablet;
 
     &::after {
-    height: 18px;
-    bottom: -75px;
+    height: 19px;
+    bottom: -103px;
    }
   }
 
@@ -121,17 +122,21 @@
 
   .reviews__title {
     order: -2;
+    margin-bottom: 51px;
 
     @include font-set(43px, 50px, 700);
   }
 
   .reviews__text {
+    margin-bottom: 59px;
+
     @include font-set(17px, 30px, 400);
   }
 
   .slider__controls {
+    margin: 0;
     margin-left: auto;
-    margin-top: -70px;
+    margin-top: -81px;
   }
 
   .slider__button {
@@ -149,8 +154,10 @@
   }
 
   .reviews__wrapper {
-    padding-top: 80px;
+    padding-top: 70px;
     padding-left: 175px;
+    padding-right: 0;
+    padding-bottom: 68px;
 
     background-image: url("../img/review@1x.jpg");
     background-repeat: no-repeat;
@@ -158,6 +165,8 @@
 
     &::after {
       width: 1050px;
+      height: 22px;
+      bottom: -88px;
     }
   }
 
@@ -166,7 +175,9 @@
   }
 
   .reviews__text {
-    padding-right: 100px;
+    padding-right: 75px;
+    padding-bottom: 41px;
+    margin-bottom: 0;
   }
 
   .slider__button {
