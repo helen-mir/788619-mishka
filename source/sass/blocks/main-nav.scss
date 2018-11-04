@@ -60,7 +60,7 @@
     color: rgba($black, 0.3);
   }
 
-  &:logo {
+  &--logo {
     margin-left: 40px;
     padding: 0;
     width: 86px;
@@ -293,7 +293,6 @@
       margin: 0;
 
       @include font-set(17px, 24px, 700);
-
     }
 
     &--form {

@@ -15,7 +15,7 @@
     left: 0;
     width: 100%;
     height: 6px;
-    background-image: url(../img/bg-zigzag-line.svg);
+    background-image: url("../img/bg-zigzag-line.svg");
     background-repeat: no-repeat;
     background-size: cover;
   }
@@ -130,9 +130,9 @@
     @include wrapper-tablet;
 
     &::after {
-    height: 19px;
-    bottom: -103px;
-   }
+      height: 19px;
+      bottom: -103px;
+    }
   }
 
   .reviews__button {
@@ -166,7 +166,7 @@
   .slider__button {
     width: 84px;
     border: none;
-   }
+  }
 }
 
 @media (min-width: $desktop-width) {

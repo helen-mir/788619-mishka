@@ -20,15 +20,15 @@
     border: 2px solid $secondary-color--darkest;
     cursor: pointer;
   }
+}
 
-  &:hover:before,
-  &:focus:before {
-    border-color: $primary-color;
-  }
+.checkbox-list__label:hover::before,
+.checkbox-list__label:focus::before {
+  border-color: $primary-color;
+}
 
-  &:active:before {
-    border-color: #c7c7c7;
-  }
+.checkbox-list__label:active::before {
+  border-color: #c7c7c7;
 }
 
 .checkbox-list__input {

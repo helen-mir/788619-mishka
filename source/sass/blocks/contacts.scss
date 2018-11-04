@@ -57,10 +57,10 @@
   &:active {
     color: rgba(70, 193, 174, 0.3);
   }
+}
 
-  &:active:after {
-    background-color: rgba(70, 193, 174, 0.3);
-  }
+.contacts__link:active::after {
+  background-color: rgba(70, 193, 174, 0.3);
 }
 
 .contacts__map {
@@ -129,7 +129,7 @@
       right: 0;
       width: 47px;
       height: 81px;
-      background-image: url(../img/icon-flag.svg);
+      background-image: url("../img/icon-flag.svg");
       background-repeat: no-repeat;
       background-size: cover;
     }
@@ -157,7 +157,6 @@
     padding-top: 14px;
     padding-left: 38px;
     padding-right: 39px;
-
   }
 
   .contacts__text {
