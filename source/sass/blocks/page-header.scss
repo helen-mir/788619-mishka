@@ -59,10 +59,14 @@
   .page-header__title {
     @include wrapper-tablet;
 
-    padding-top: 112px;
+    padding-top: 58px;
     padding-bottom: 74px;
 
     @include font-set(43px, 50px, 700);
+
+    &--index {
+      padding-top: 112px;
+    }
   }
 }
 
@@ -80,12 +84,16 @@
 
   .page-header__title {
     max-width: 1150px;
-    padding-top: 114px;
+    padding-top: 54px;
     padding-left: 268px;
     padding-right: 268px;
     padding-bottom: 85px;
 
     @include font-set(53px, 57px, 700);
+
+    &--index {
+      padding-top: 114px;
+    }
   }
 
   .page-header__info {

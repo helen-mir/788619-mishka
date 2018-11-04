@@ -48,6 +48,17 @@
   padding-top: 16px;
   padding-left: 80px;
   padding-right: 80px;
+
+  &:hover,
+  &:focus {
+    color: $white;
+    background-color: $secondary-color--darkest;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: $secondary-color--darkest;
+  }
 }
 
 .reviews__item {
@@ -88,6 +99,19 @@
     background-image: url("../img/icon-right-arrow.svg");
   }
 }
+
+.slider__button--prev:hover,
+.slider__button--next:hover,
+.slider__button--prev:focus,
+.slider__button--next:focus {
+  opacity: 0.6;
+}
+
+.slider__button--prev:active,
+.slider__button--next:active {
+  opacity: 0.3;
+}
+
 
 @media (min-width: $tablet-width) {
   .reviews {

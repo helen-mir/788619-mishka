@@ -12,7 +12,7 @@
   &::before {
     content: "";
     position: absolute;
-    top: 0;
+    top: -8px;
     left: 0;
     display: block;
     width: 40px;
@@ -20,13 +20,22 @@
     border: 2px solid $secondary-color--darkest;
     cursor: pointer;
   }
+
+  &:hover:before,
+  &:focus:before {
+    border-color: $primary-color;
+  }
+
+  &:active:before {
+    border-color: #c7c7c7;
+  }
 }
 
 .checkbox-list__input {
   &:checked + .checkbox-list__label::after {
     content: "";
     position: absolute;
-    top: 10px;
+    top: 4px;
     left: 8px;
     display: block;
     width: 23px;
@@ -45,19 +54,29 @@
   }
 
   .checkbox-list__item {
-    width: 230px;
-    margin-right: 20px;
+    width: 250px;
     margin-bottom: 61px;
-    padding-left: 81px;
   }
 
   .checkbox-list__label {
+    padding-left: 80px;
+
     @include font-set(19px, 18px, 700);
+
+    &::before {
+      top: -9px;
+      width: 52px;
+      height: 52px;
+    }
   }
 }
 
 @media (min-width: $desktop-width) {
   .checkbox-list {
     width: 875px;
+  }
+
+  .checkbox-list__item {
+    width: 267px;
   }
 }

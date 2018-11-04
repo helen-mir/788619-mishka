@@ -48,6 +48,19 @@
     background-color: $primary-color;
     background-size: cover;
   }
+
+  &:hover,
+  &:focus {
+    color: #46c1ae;
+  }
+
+  &:active {
+    color: rgba(70, 193, 174, 0.3);
+  }
+
+  &:active:after {
+    background-color: rgba(70, 193, 174, 0.3);
+  }
 }
 
 .contacts__map {
@@ -79,6 +92,17 @@
   padding-left: 51px;
   padding-right: 56px;
   margin: 0 auto 40px;
+
+  &:hover,
+  &:focus {
+    color: $white;
+    background-color: $secondary-color--darkest;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: $secondary-color--darkest;
+  }
 }
 
 @media (min-width: $tablet-width) {

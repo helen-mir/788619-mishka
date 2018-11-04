@@ -12,7 +12,7 @@
   &::before {
     content: "";
     position: absolute;
-    top: 0;
+    top: -8px;
     left: 0;
     width: 40px;
     height: 40px;
@@ -35,7 +35,7 @@
   &:checked + .radio-list__label::after {
     content: "";
     position: absolute;
-    top: 12px;
+    top: 4px;
     left: 12px;
     width: 16px;
     height: 16px;
@@ -46,11 +46,37 @@
 
 @media (min-width: $tablet-width) {
   .radio-list__label {
+    padding-left: 83px;
+
     @include font-set(19px, 18px, 700);
+
+    &::before {
+      top: -23px;
+      width: 52px;
+      height: 52px;
+    }
   }
 
+  .radio-list__input {
+    &:checked + .radio-list__label::after {
+      top: -6px;
+      left: 16px;
+      width: 20px;
+      height: 20px;
+    }
+  }
   .radio-list__item {
     margin-bottom: 52px;
-    padding-left: 81px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .radio-list__label {
+    padding-left: 87px;
+
+    &::before {
+      left: 7px;
+      top: -20px;
+    }
   }
 }

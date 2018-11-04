@@ -1,11 +1,20 @@
 .production {
-  padding-bottom: 33px;
+  padding-bottom: 57px;
 }
 
 .production__wrapper {
   @include wrapper;
 
   border: 1px solid #ededed;
+
+  &:hover,
+  &:focus {
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
+  }
+
+  &:active {
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
+  }
 }
 
 .production__wrapper-title {
@@ -37,24 +46,70 @@
 
 .production__text {
   display: block;
-  margin-top: 34px;
-  margin-bottom: 33px;
+  margin-top: 0;
+  margin-bottom: 29px;
 
   @include font-set(13px, 24px, 400);
 }
 
 .production__footer {
-  padding: 34px 34px 33px;
+  padding: 26px 34px 33px;
 }
 
 .production__button {
+  padding-top: 13px;
   padding-left: 23px;
   padding-right: 23px;
+
+  &:hover,
+  &:focus {
+    color: $white;
+    background-color: $secondary-color--darkest;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: $secondary-color--darkest;
+  }
+}
+
+.production__video {
+  position: relative;
+}
+
+.production__image {
+  width: 100%;
+}
+
+.production__button-play {
+  position: absolute;
+  top: 75px;
+  left: 50%;
+  width: 100px;
+  height: 76px;
+
+  background-color: transparent;
+  background-image: url("../img/icon-play.svg");
+  background-repeat: no-repeat;
+  border: none;
+  outline: none;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  transition: all 0.2s ease;
+
+  &:hover {
+    transform: translate(-50%, -50%) scale(1.2);
+  }
+
+  &:active {
+    transform: translate(-50%, -50%) scale(0.8);
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: $tablet-width) {
   .production {
-    padding-bottom: 46px;
+    padding-bottom: 110px;
   }
 
   .production__wrapper {
@@ -86,6 +141,7 @@
 
   .production__text {
     margin-top: 0;
+    margin-bottom: 38px;
 
     @include font-set(15px, 30px, 400);
   }
@@ -96,6 +152,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .production {
+    padding-bottom: 106px;
+  }
+
   .production__wrapper {
     position: relative;
     max-width: 1150px;
@@ -111,7 +171,7 @@
   .production__wrapper-title,
   .production__footer {
     width: 368px;
-    padding-left: 60px;
+    padding-left: 78px;
   }
 
   .production__footer {
@@ -119,18 +179,24 @@
   }
 
   .production__wrapper-title {
-    padding-top: 101px;
+    padding-top: 97px;
     padding-right: 140px;
+    padding-bottom: 31px;
   }
 
   .production__button {
-    padding-left: 45px;
-    padding-right: 45px;
+    padding-left: 43px;
+    padding-right: 43px;
+    margin-bottom: 59px;
   }
 
   .production__title::before {
     bottom: 71px;
     left: 0;
+  }
+
+  .production__text {
+    margin-bottom: 47px;
   }
 }
 

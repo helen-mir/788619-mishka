@@ -95,6 +95,11 @@
     padding-top: 29px;
     padding-left: 38px;
     padding-bottom: 28px;
+
+    &:hover {
+      transition: 0.5s;
+      padding-top: -5px;
+    }
   }
 
   .category__link {

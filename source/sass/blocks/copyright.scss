@@ -28,3 +28,16 @@
     margin-right: 30px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .copyright__icon path {
+    &:hover,
+    &:focus {
+      fill: #46c1ae;
+    }
+
+    &:active {
+      fill: #bde3dd;
+    }
+  }
+}

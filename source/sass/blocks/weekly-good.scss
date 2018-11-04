@@ -30,6 +30,17 @@
 
 .weekly-good__button {
   padding: 13px 83px;
+
+  &:hover,
+  &:focus {
+    color: $white;
+    background-color: $secondary-color--darkest;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: $secondary-color--darkest;
+  }
 }
 
 .weekly-good__header {
