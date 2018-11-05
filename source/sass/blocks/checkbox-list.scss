@@ -87,8 +87,8 @@
 
   .checkbox-list__input {
     &:checked + .checkbox-list__label::after {
-    top: 5px;
-    left: 15px;
+      top: 5px;
+      left: 15px;
     }
   }
 }
