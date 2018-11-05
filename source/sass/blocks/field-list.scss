@@ -10,23 +10,43 @@
 
 .field-list__input {
   width: 260px;
-  padding-bottom: 15px;
+  height: 33px;
+  padding-bottom: 25px;
   color: rgba(68, 68, 68, 0.3);
 
   @include font-set(17px, 18px, 400);
 
   border: 0;
   border-bottom: 2px solid $black;
+
+  &:hover,
+  &:focus {
+    border-color: $primary-color;
+  }
+
+  &:active {
+    border-color: $primary-color;
+    color: $secondary-color--darkest;
+  }
+}
+
+.field-list__input::placeholder {
+  color: rgba(68, 68, 68, 0.3);
 }
 
 .field-list__label {
   display: block;
-  margin-bottom: 8px;
+  margin-bottom: 11px;
 
   @include font-set(17px, 18px, 700);
 }
 
 @media (min-width: $tablet-width) {
+  .field-list {
+    width: 100%;
+    margin-left: 43px;
+  }
+
   .field-list__label {
     display: inline;
     margin-right: 23px;
@@ -34,25 +54,25 @@
     @include font-set(19px, 18px, 700);
   }
 
-  .field-list__input {
-    width: 374px;
-  }
-
-  .field-list__input:nth-child(1) { /*не работает*/
-    width: 430px;
-  }
-
   .field-list__item {
-    margin-bottom: 33px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 41px;
+  }
+
+  .field-list__input {
+    width: 100%;
+    height: 38px;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .field-list__input {
-    width: 577px;
+  .field-list {
+    margin-left: 27px;
   }
 
-  .field-list__input:nth-child(1) { /*не работает*/
-    width: 629px;
+  .field-list__input {
+    margin-right: 175px;
   }
 }

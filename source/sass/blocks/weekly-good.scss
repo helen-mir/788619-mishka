@@ -1,25 +1,50 @@
 .weekly-good {
   padding-top: 33px;
-  padding-bottom: 76px;
+  padding-bottom: 70px;
 }
 
 .weekly-good__wrapper {
+  position: relative;
+
   @include wrapper;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -40px;
+    left: 0;
+    width: 100%;
+    height: 6px;
+    background-image: url("../img/bg-zigzag-line.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 }
 
 .weekly-good__title {
   @include font-set(25px, 30px, 700);
 
   margin: 0;
-  margin-bottom: 9px;
+  margin-bottom: 3px;
 }
 
 .weekly-good__button {
-  padding: 18px 83px;
+  padding: 13px 83px;
+
+  &:hover,
+  &:focus {
+    color: $white;
+    background-color: $secondary-color--darkest;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: $secondary-color--darkest;
+  }
 }
 
 .weekly-good__header {
-  margin-bottom: 31px;
+  margin-bottom: 23px;
 }
 
 .weekly-good__subtitle {
@@ -33,7 +58,7 @@
 .weekly-good__desc {
   display: block;
   margin: 0;
-  margin-bottom: 35px;
+  margin-bottom: 20px;
 
   @include font-set(15px, 24px, 400);
   color: $secondary-color--darkest;
@@ -61,13 +86,8 @@
   padding: 0;
 }
 
-.weekly-good__image-mobile {
-  margin-bottom: 29px;
-}
-
-.weekly-good__image-tablet,
-.weekly-good__image-desktop {
-  display: none;
+.weekly-good__image {
+  margin-bottom: 25px;
 }
 
 .weekly-good__price {
@@ -81,14 +101,15 @@
 
 @media (min-width: $tablet-width) {
   .weekly-good {
-    padding-top: 55px;
-    padding-bottom: 128px;
+    padding-top: 48px;
+    padding-bottom: 121px;
   }
 
   .weekly-good__header {
     display: flex;
     justify-content: space-between;
     width: 668px;
+    margin-bottom: 49px;
   }
 
   .weekly-good__subtitle {
@@ -97,6 +118,7 @@
 
   .weekly-good__title {
     width: 440px;
+    z-index: 10;
 
     @include font-set(43px, 50px, 700);
   }
@@ -105,13 +127,14 @@
     position: relative;
 
     @include wrapper-tablet;
+
+    &::after {
+      height: 18px;
+      bottom: -75px;
+    }
   }
 
-  .weekly-good__image-mobile {
-    display: none;
-  }
-
-  .weekly-good__image-tablet {
+  .weekly-good__image {
     display: block;
     position: absolute;
     right: 0;
@@ -124,6 +147,9 @@
   }
 
   .weekly-good__price {
+    display: block;
+    width: 146px;
+    margin: 0 auto;
     margin-bottom: 34px;
 
     @include font-set(20px, 24px, 700);
@@ -133,17 +159,39 @@
   .weekly-good__content {
     width: 50%;
   }
+
+  .weekly-good__desc {
+    padding-right: 38px;
+    margin-bottom: 38px;
+
+    @include font-set(17px, 30px, 400);
+  }
+
+  .weekly-good__footer {
+    padding-right: 42px;
+  }
+
+  .weekly-good__table {
+    margin-bottom: 61px;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .weekly-good {
     padding: 0;
-    padding-top: 132px;
-    padding-bottom: 168px;
+    padding-top: 124px;
+    padding-bottom: 159px;
   }
 
   .weekly-good__wrapper {
     @include wrapper-desktop;
+
+    &::after {
+      width: 1040px;
+      left: 52px;
+      bottom: -99px;
+      height: 21px;
+    }
   }
 
   .weekly-good__header {
@@ -152,15 +200,13 @@
   }
 
   .weekly-good__subtitle {
-    margin-right: 65px;
+    margin-top: 10px;
+    margin-left: 47px;
+    margin-right: 53px;
     order: -1;
   }
 
-  .weekly-good__image-tablet {
-    display: none;
-  }
-
-  .weekly-good__image-desktop {
+  .weekly-good__image {
     display: block;
     position: absolute;
     right: 0;
@@ -168,12 +214,12 @@
   }
 
   .weekly-good__desc {
-    margin-top: 50px;
-    margin-bottom: 60px;
+    margin-top: 47px;
+    margin-bottom: 49px;
   }
 
   .weekly-good__table {
-    margin-bottom: 100px;
+    margin-bottom: 115px;
   }
 
   .weekly-good__footer,

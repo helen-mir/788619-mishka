@@ -6,8 +6,20 @@
 .order-form__group {
   padding: 0;
   margin: 0;
-  padding-bottom: 15px;
+  margin-bottom: 17px;
   border: none;
+
+  &--color {
+    margin-bottom: 0;
+  }
+
+  &--name {
+    margin-bottom: 16px;
+  }
+
+  &--text {
+    margin-bottom: 14px;
+  }
 }
 
 .order-form__list {
@@ -15,12 +27,39 @@
 }
 
 .order-form__title {
+  display: flex;
+  align-items: center;
   margin: 0;
-  margin-bottom: 32px;
+  margin-bottom: 33px;
   color: $primary-color;
 
   @include font-set(17px, 16px, 700);
   text-transform: uppercase;
+
+  &::after {
+    content: "";
+    width: 200px;
+    height: 1px;
+    margin-left: 25px;
+    flex-grow: 1;
+    background-color: $primary-color;
+  }
+
+  &--name {
+    margin-bottom: 31px;
+  }
+
+  &--text {
+    margin-bottom: 12px;
+  }
+
+  &--email {
+    margin-bottom: 23px;
+  }
+
+  &--textarea {
+    margin-bottom: 28px;
+  }
 }
 
 .order-form__text {
@@ -41,13 +80,55 @@
   border-bottom: 2px solid $black;
 }
 
+.order-form__email,
+.order-form__tel {
+  height: 34px;
+
+  &:hover,
+  &:focus {
+    border-color: $primary-color;
+  }
+
+  &:active {
+    border-color: $primary-color;
+    color: $secondary-color--darkest;
+  }
+}
+
+.order-form__tel {
+  position: relative;
+  margin-bottom: 20px;
+  height: 39px;
+
+  @include font-set(19px, 18px, 400);
+}
+
+.order-form__email {
+  margin-bottom: 15px;
+}
+
+.order-form__tel::placeholder,
+.order-form__email::placeholder,
+.order-form__textarea::placeholder {
+  color: rgba(68, 68, 68, 0.3);
+}
+
 .order-form__textarea {
-  width: 228px;
   height: 140px;
   padding-top: 17px;
   padding-left: 16px;
   padding-right: 16px;
   border: 2px solid $black;
+
+  &:hover,
+  &:focus {
+    border-color: $primary-color;
+  }
+
+  &:active {
+    border-color: $primary-color;
+    color: $secondary-color--darkest;
+  }
 }
 
 .order-form__button {
@@ -56,6 +137,28 @@
   padding-top: 13px;
   padding-left: 45px;
   padding-right: 45px;
+
+  &:hover,
+  &:focus {
+    color: $white;
+    background-color: $secondary-color--darkest;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: $secondary-color--darkest;
+  }
+}
+
+.order-form__input-wrapper {
+  position: relative;
+  margin: 0;
+}
+
+.order-form__icon {
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 
 @media (min-width: $tablet-width) {
@@ -63,11 +166,23 @@
     display: flex;
     flex-direction: row;
     padding-top: 54px;
-    padding-bottom: 25px;
-  }
 
-  .order-form__group:nth-child(2n) {
-    background-color: $secondary-color;
+    &--color {
+      padding-top: 60px;
+    }
+
+    &--name {
+      padding-top: 66px;
+      margin-bottom: 10px;
+    }
+
+    &--text {
+      padding-top: 52px;
+    }
+
+    &:nth-child(2n) {
+      background-color: $secondary-color;
+    }
   }
 
   .order-form__wrapper {
@@ -77,7 +192,12 @@
   }
 
   .order-form__title {
+    display: block;
     width: 166px;
+  }
+
+  .order-form__title::after {
+    display: none;
   }
 
   .order-form__email,
@@ -86,6 +206,10 @@
     margin-bottom: 40px;
     padding-bottom: 14px;
     background-color: $secondary-color;
+  }
+
+  .order-form__tel {
+    height: 44px;
   }
 
   .order-form__textarea {
@@ -99,7 +223,7 @@
 
     @include wrapper-tablet;
 
-    margin-top: 54px;
+    margin-top: 49px;
     margin-bottom: 54px;
   }
 
@@ -127,8 +251,12 @@
     width: 700px;
   }
 
+  .order-form__email {
+    margin-bottom: 53px;
+  }
+
   .order-form__text {
-    margin-right: 197px;
+    margin-right: 175px;
   }
 
   .order-form__button {
@@ -139,7 +267,17 @@
     padding-left: 60px;
   }
 
+  .order-form__textarea {
+    margin-top: -16px;
+  }
+
   .order-form__footer {
-    margin-top: 27px;
+    margin-top: 48px;
+  }
+
+  .order-form__group {
+    &--color {
+      padding-top: 64px;
+    }
   }
 }

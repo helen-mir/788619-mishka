@@ -1,4 +1,6 @@
 .page-footer {
+  padding-top: 25px;
+  padding-bottom: 25px;
   background: $secondary-color;
 }
 
@@ -11,16 +13,20 @@
 }
 
 @media (min-width: $tablet-width) {
+  .page-footer {
+    padding-top: 51px;
+    padding-bottom: 58px;
+  }
+
   .page-footer__logo {
     display: block;
-    width: 180px;
-    margin-top: 50px;
-    margin-bottom: 56px;
+    width: 105px;
+    margin-right: 158px;
   }
 
   .page-footer__wrapper {
     display: flex;
-    justify-content: space-between;
+    align-items: center;
 
     @include wrapper-tablet;
   }
@@ -34,5 +40,9 @@
 @media (min-width: $desktop-width) {
   .page-footer__wrapper {
     @include wrapper-desktop;
+  }
+
+  .page-footer__logo {
+    margin-right: 350px;
   }
 }

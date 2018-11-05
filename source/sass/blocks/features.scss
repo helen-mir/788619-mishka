@@ -15,20 +15,110 @@
 }
 
 .features__item {
+  position: relative;
   padding-top: 58px;
   padding-bottom: 32px;
 
   @include font-set(17px, 20px, 700);
 }
 
+.features__item--friedly-materials::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 8px;
+  width: 32px;
+  height: 37px;
+  background-image: url("../img/icon-feature-flower.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.features__item--scandinavian-style {
+  padding-top: 52px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 47px;
+    height: 27px;
+    background-image: url("../img/icon-feature-money.svg");
+    background-repeat: no-repeat;
+  }
+}
+
+.features__item--increases-like {
+  padding-top: 53px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 4px;
+    left: 6px;
+    width: 34px;
+    height: 27px;
+    background-image: url("../img/icon-feature-heart.svg");
+    background-repeat: no-repeat;
+  }
+}
+
+.features__item--handmade {
+  padding-top: 54px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 34px;
+    height: 34px;
+    background-image: url("../img/icon-feature-ball.svg");
+    background-repeat: no-repeat;
+  }
+}
+
+.features__item--support {
+  padding-top: 52px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -4px;
+    width: 55px;
+    height: 23px;
+    background-image: url("../img/icon-feature-rocket.svg");
+    background-repeat: no-repeat;
+  }
+}
+
+.features__item--gift-wrap {
+  padding-top: 53px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 33px;
+    height: 32px;
+    background-image: url("../img/icon-feature-gift.svg");
+    background-repeat: no-repeat;
+  }
+}
+
 @media (min-width: $tablet-width) {
   .features__wrapper {
     @include wrapper-tablet;
 
-    padding-bottom: 60px;
+    padding-bottom: 26px;
   }
 
   .features__title {
+    margin-bottom: 46px;
+
     @include font-set(43px, 50px, 700);
   }
 
@@ -40,7 +130,7 @@
   }
 
   .features__item {
-    width: 300px;
+    width: 333px;
     padding-top: 57px;
     padding-right: 34px;
     padding-bottom: 56px;
@@ -78,10 +168,12 @@
     max-width: 1150px;
     padding: 0 225px;
 
-    padding-bottom: 92px;
+    padding-bottom: 48px;
   }
 
   .features__title {
+    margin-bottom: 32px;
+
     @include font-set(53px, 57px, 700);
   }
 
@@ -94,5 +186,9 @@
     padding-top: 70px;
     padding-right: 50px;
     padding-bottom: 42px;
+
+    &::before {
+      top: 15px;
+    }
   }
 }
