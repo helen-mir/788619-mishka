@@ -76,8 +76,15 @@
     padding-left: 87px;
 
     &::before {
-      left: 7px;
+      left: 8px;
       top: -20px;
+    }
+  }
+
+  .radio-list__input {
+    &:checked + .radio-list__label::after {
+      top: -4px;
+      left: 23px;
     }
   }
 }

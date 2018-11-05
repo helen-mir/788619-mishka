@@ -72,7 +72,7 @@
 .order-form__textarea,
 .order-form__tel {
   width: 260px;
-  color: rgba(68, 68, 68, 0.3);
+  color: $secondary-color--darkest;
 
   @include font-set(17px, 18px, 400);
 
@@ -163,8 +163,6 @@
 
 @media (min-width: $tablet-width) {
   .order-form__group {
-    display: flex;
-    flex-direction: row;
     padding-top: 54px;
 
     &--color {
@@ -172,8 +170,8 @@
     }
 
     &--name {
+      margin-bottom: 0;
       padding-top: 66px;
-      margin-bottom: 10px;
     }
 
     &--text {
@@ -251,33 +249,54 @@
     width: 700px;
   }
 
+  .order-form__textarea {
+    margin-left: 8px;
+  }
+
   .order-form__email {
     margin-bottom: 53px;
   }
 
-  .order-form__text {
-    margin-right: 175px;
-  }
-
-  .order-form__button {
-    margin-left: 167px;
-  }
-
   .order-form__title {
+    padding-top: 5px;
     padding-left: 60px;
-  }
 
-  .order-form__textarea {
-    margin-top: -16px;
+    &--text {
+      padding-top: 10px;
+    }
+
+    &--textarea {
+      padding-top: 17px;
+    }
+
+    &--name {
+      padding-top: 7px;
+    }
   }
 
   .order-form__footer {
+    width: 700px;
+    padding: 0;
     margin-top: 48px;
   }
 
   .order-form__group {
     &--color {
       padding-top: 64px;
+      padding-bottom: 5px;
     }
+
+    &--text {
+      padding-top: 35px;
+    }
+
+    &--name {
+      padding-top: 62px;
+      padding-bottom: 21px;
+    }
+  }
+
+  .order-form__input-wrapper {
+    padding-left: 8px;
   }
 }
