@@ -100,10 +100,19 @@
     padding-top: 29px;
     padding-left: 38px;
     padding-bottom: 28px;
+    transition: 0,5s;
 
     &:hover {
-      transition: 0.5s;
-      padding-top: -5px;
+      transform: translateY(-5px);
+      box-shadow: 0 5px 0 0 $primary-color;
     }
+  }
+
+  .category__item--kids-toys:hover {
+    box-shadow: 0 5px 0 0 $primary-color--darkest;
+  }
+
+  .category__link:active {
+    opacity: 0.3;
   }
 }
