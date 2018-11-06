@@ -149,6 +149,10 @@
   .production__footer {
     padding: 0 44px;
   }
+
+  .production__button-play {
+    top: 50%;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -166,7 +170,7 @@
   .production__video {
     position: absolute;
     top: 0;
-    left: 50px;
+    left: 0;
   }
 
   .production__wrapper-title,

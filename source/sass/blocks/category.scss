@@ -19,7 +19,8 @@
   }
 }
 
-.category__item--interior-items::after {
+.category__item--interior-items {
+  &::after {
   content: "";
   position: absolute;
   top: 23px;
@@ -28,9 +29,21 @@
   height: 62px;
   background-image: url("../img/icon-interior.svg");
   background-repeat: no-repeat;
+  opacity: 0.7;
+  }
+
+  &:hover:after,
+  &:focus:after {
+    opacity: 1;
+  }
+
+  &:active:after {
+    opacity: 0.3;
+  }
 }
 
-.category__item--kids-toys::after {
+.category__item--kids-toys {
+  &::after {
   content: "";
   position: absolute;
   top: 21px;
@@ -39,6 +52,17 @@
   height: 60px;
   background-image: url("../img/icon-toy.svg");
   background-repeat: no-repeat;
+  opacity: 0.7;
+  }
+
+  &:hover:after,
+  &:focus:after {
+    opacity: 1;
+  }
+
+  &:active:after {
+    opacity: 0.3;
+  }
 }
 
 .category__link {

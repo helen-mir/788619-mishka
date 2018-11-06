@@ -187,10 +187,10 @@
     @include wrapper-desktop;
 
     &::after {
-      width: 1040px;
-      left: 52px;
+      width: 100%;
+      left: 0;
       bottom: -99px;
-      height: 21px;
+      height: 24px;
     }
   }
 
@@ -215,6 +215,7 @@
   .weekly-good__desc {
     margin-top: 47px;
     margin-bottom: 49px;
+    padding-right: 50px;
   }
 
   .weekly-good__table {

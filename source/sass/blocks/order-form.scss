@@ -249,6 +249,10 @@
     width: 700px;
   }
 
+  .order-form__tel {
+    margin-bottom: 24px;
+  }
+
   .order-form__textarea {
     margin-left: 8px;
   }
@@ -258,7 +262,7 @@
   }
 
   .order-form__title {
-    padding-top: 5px;
+    padding-top: 18px;
     padding-left: 60px;
 
     &--text {
@@ -292,7 +296,7 @@
 
     &--name {
       padding-top: 62px;
-      padding-bottom: 21px;
+      padding-bottom: 17px;
     }
   }
 

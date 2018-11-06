@@ -65,8 +65,11 @@
 
 .contacts__map {
   position: relative;
-  width: 100%;
+  width: 100vw;
+  top: 0;
+  left: 50%;
   height: 457px;
+  margin-left: -50vw;
   margin-bottom: 39px;
 }
 
@@ -177,7 +180,8 @@
   .contacts__wrapper {
     position: relative;
     max-width: 1150px;
-    padding: 0 225px;
+    padding-left: 225px;
+    padding-right: 50px;
   }
 
   .contacts__list {
@@ -192,17 +196,18 @@
 
   .contacts__item {
     width: 309px;
-    margin-bottom: 26px;
+    margin-bottom: 29px;
   }
 
   .contacts__title {
+    margin-right: 0;
     margin-bottom: 49px;
 
     @include font-set(53px, 57px, 700);
 
     &::after {
-      left: -100px;
-      top: -15px;
+      left: -112px;
+      top: -9px;
     }
   }
 
@@ -212,9 +217,10 @@
 
   .contacts__map {
     position: absolute;
-    top: 2923px;
+    top: -69px;
     right: 50px;
     width: 525px;
+    margin: 0;
   }
 
   .contacts__link::after {
