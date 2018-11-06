@@ -3,9 +3,11 @@
   position: fixed;
   top: 50%;
   left: 50%;
-  transform: translate (-50%, -50%);
-  padding-top: 38px;
-  padding-bottom: 46px;
+  transform: translate(-50%, -50%);
+  z-index: 11;
+  padding: 38px 109px 46px;
+  background-color: $white;
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
 }
 
 .modal__title {
@@ -16,6 +18,7 @@
   @include font-set(25px, 30px, 700);
 
   text-align: center;
+  text-transform: uppercase;
 }
 
 .modal__text {
@@ -23,6 +26,7 @@
   margin: 0;
   margin-bottom: 29px;
   text-align: center;
+  color: $secondary-color--darkest;
 }
 
 .modal__list {
@@ -34,9 +38,42 @@
 }
 
 .modal_button {
-  padding-left: 82px;
-  padding-right: 82px;
+  padding-left: 126px;
+  padding-right: 126px;
   color: $white;
   background-color: $primary-color;
   border: 2px solid $primary-color;
+}
+
+.modal--show {
+  display: block;
+}
+
+.choose-size__label-radio {
+  display: block;
+  padding: 20px 50px;
+  margin-right: 7px;
+
+  @include font-set(17px, 16px, 700);
+
+  text-transform: uppercase;
+  color: $secondary-color--darkest;
+  border: 2px solid #ececec;
+
+  &--active {
+    border-color: $primary-color;
+  }
+
+  &:hover,
+  &:focus {
+    border-color: #c7c7c7;
+  }
+
+  &:active {
+    border-color: $primary-color;
+  }
+}
+
+.choose-size__label-radio:last-child {
+  margin-right: 0;
 }

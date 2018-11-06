@@ -7,27 +7,17 @@
 
 .social__list {
   display: flex;
+  justify-content: space-between;
   align-items: center;
   width: 141px;
 
   @include lists;
 }
 
-.social__item {
-  margin-right: 41px;
-}
-
 @media (min-width: $tablet-width) {
   .social {
     margin: 0;
-    margin-right: 82px;
     padding: 0;
     border: none;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .social {
-    margin-right: 271px;
   }
 }

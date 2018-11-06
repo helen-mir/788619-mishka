@@ -11,8 +11,8 @@
 .field-list__input {
   width: 260px;
   height: 33px;
-  padding-bottom: 25px;
-  color: rgba(68, 68, 68, 0.3);
+  padding: 0 16px 25px;
+  color: $secondary-color--darkest;
 
   @include font-set(17px, 18px, 400);
 
@@ -74,5 +74,11 @@
 
   .field-list__input {
     margin-right: 175px;
+    height: 42px;
+    padding-bottom: 14px;
+  }
+
+  .field-list__item {
+    margin-bottom: 34px;
   }
 }

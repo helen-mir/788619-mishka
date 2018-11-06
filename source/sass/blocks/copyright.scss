@@ -1,14 +1,16 @@
 .copyright {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+  width: 182px;
   padding-top: 14px;
+  margin: 0 auto;
 
   text-align: center;
 }
 
 .copyright__text {
-  margin-right: 30px;
+  width: 128px;
 
   @include font-set(19px, 18px, 700);
 
@@ -17,16 +19,14 @@
   }
 }
 
+.copyright__link {
+  width: 27px;
+}
+
 @media (min-width: $tablet-width) {
   .copyright {
     margin: 0;
     padding: 0;
-    width: auto;
-  }
-
-  .copyright__text {
-    margin: 0;
-    margin-right: 30px;
   }
 }
 

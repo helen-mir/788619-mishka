@@ -49,8 +49,23 @@
 }
 
 @media (min-width: $tablet-width) {
-  .category__list {
+  .zigzag {
     position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -1px;
+      left: 0;
+      width: 100%;
+      height: 21px;
+      background-image: url("../img/bg-zigzag-fill.svg");
+      background-size: auto 100%;
+      background-position-x: center;
+    }
+  }
+
+  .category__list {
     display: flex;
     margin: 0 auto;
     width: 100%;
@@ -58,36 +73,26 @@
     @include wrapper-tablet;
   }
 
-  .category__list::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 10px;
-    background-image: url("../img/bg-zigzag-fill.svg");
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-
   .category__item {
     width: 334px;
-    padding-top: 36px;
-    padding-bottom: 34px;
+    padding-top: 29px;
+    padding-bottom: 39px;
+  }
+
+  .category__link {
+    @include font-set(20px, 30px, 700);
   }
 }
 
 @media (min-width: $desktop-width) {
-  .category__list {
-    @include wrapper-desktop;
+  .zigzag::after {
+    bottom: -17px;
+    left: 18px;
+    height: 34px;
   }
 
-  .category__list::after {
-    width: 1050px;
-    bottom: -1px;
-    left: 21px;
-    height: 20px;
-    background-size: auto;
+  .category__list {
+    @include wrapper-desktop;
   }
 
   .category__item {
@@ -95,14 +100,19 @@
     padding-top: 29px;
     padding-left: 38px;
     padding-bottom: 28px;
+    transition: 0.5s;
 
     &:hover {
-      transition: 0.5s;
-      padding-top: -5px;
+      transform: translateY(-5px);
+      box-shadow: 0 5px 0 0 $primary-color;
     }
   }
 
-  .category__link {
-    @include font-set(20px, 30px, 700);
+  .category__item--kids-toys:hover {
+    box-shadow: 0 5px 0 0 $primary-color--darkest;
+  }
+
+  .category__link:active {
+    opacity: 0.3;
   }
 }
