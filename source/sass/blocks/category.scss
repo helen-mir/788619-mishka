@@ -9,58 +9,54 @@
 .category__item {
   position: relative;
   padding: 27px 30px;
-
-  &--interior-items {
-    background-color: $primary-color;
-  }
-
-  &--kids-toys {
-    background-color: $primary-color--darkest;
-  }
 }
 
 .category__item--interior-items {
+  background-color: $primary-color;
+
   &::after {
-  content: "";
-  position: absolute;
-  top: 23px;
-  right: 36px;
-  width: 40px;
-  height: 62px;
-  background-image: url("../img/icon-interior.svg");
-  background-repeat: no-repeat;
-  opacity: 0.7;
+    content: "";
+    position: absolute;
+    top: 23px;
+    right: 36px;
+    width: 40px;
+    height: 62px;
+    background-image: url("../img/icon-interior.svg");
+    background-repeat: no-repeat;
+    opacity: 0.7;
   }
 
-  &:hover:after,
-  &:focus:after {
+  &:hover::after,
+  &:focus::after {
     opacity: 1;
   }
 
-  &:active:after {
+  &:active::after {
     opacity: 0.3;
   }
 }
 
 .category__item--kids-toys {
+  background-color: $primary-color--darkest;
+
   &::after {
-  content: "";
-  position: absolute;
-  top: 21px;
-  right: 27px;
-  width: 60px;
-  height: 60px;
-  background-image: url("../img/icon-toy.svg");
-  background-repeat: no-repeat;
-  opacity: 0.7;
+    content: "";
+    position: absolute;
+    top: 21px;
+    right: 27px;
+    width: 60px;
+    height: 60px;
+    background-image: url("../img/icon-toy.svg");
+    background-repeat: no-repeat;
+    opacity: 0.7;
   }
 
-  &:hover:after,
-  &:focus:after {
+  &:hover::after,
+  &:focus::after {
     opacity: 1;
   }
 
-  &:active:after {
+  &:active::after {
     opacity: 0.3;
   }
 }

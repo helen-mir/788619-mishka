@@ -155,10 +155,22 @@
   margin: 0;
 }
 
-.order-form__icon {
+.icon--phone,
+.icon--mail {
   position: absolute;
-  top: 0;
-  right: 0;
+  top: -3px;
+  right: 12px;
+  fill: #d3d2d2;
+
+
+  &:hover,
+  &:focus {
+    fill: $primary-color;
+  }
+
+  &:active {
+    fill: $primary-color;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -302,5 +314,9 @@
 
   .order-form__input-wrapper {
     padding-left: 8px;
+  }
+
+  .order-form__wrapper--tel {
+    margin-bottom: 18px;
   }
 }
