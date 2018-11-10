@@ -2,8 +2,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 182px;
-  padding-top: 14px;
+  width: 186px;
+  padding-top: 7px;
   margin: 0 auto;
 
   text-align: center;
@@ -20,7 +20,24 @@
 }
 
 .copyright__link {
-  width: 27px;
+  width: 38px;
+}
+
+.icon--htmlacademy {
+  top: -15px;
+  right: 0;
+  fill: $primary-color;
+  width: 41px;
+  height: 50px;
+
+  &:hover,
+  &:focus {
+    fill: #46c1ae;
+  }
+
+  &:active {
+    fill: #bde3dd;
+  }
 }
 
 @media (min-width: $tablet-width) {

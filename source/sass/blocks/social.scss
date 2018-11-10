@@ -14,10 +14,30 @@
   @include lists;
 }
 
+.icon--insta,
+.icon--fb,
+.icon--twitter {
+  fill: #221f1f;
+
+  &:hover,
+  &:focus {
+    fill: $primary-color;
+  }
+
+  &:active {
+    fill: #bde3dd;
+  }
+}
+
 @media (min-width: $tablet-width) {
   .social {
     margin: 0;
     padding: 0;
+    padding-left: 35px;
     border: none;
+  }
+
+  .social__list {
+    padding-top: 6px;
   }
 }
