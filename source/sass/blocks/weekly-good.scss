@@ -183,17 +183,17 @@
   .weekly-good {
     padding: 0;
     padding-top: 124px;
-    padding-bottom: 159px;
+    padding-bottom: 157px;
   }
 
   .weekly-good__wrapper {
     @include wrapper-desktop;
 
     &::after {
-      width: 100%;
-      left: 0;
+      width: 1050px;
+      left: 50px;
       bottom: -99px;
-      height: 24px;
+      height: 22px;
     }
   }
 
@@ -204,7 +204,7 @@
 
   .weekly-good__subtitle {
     padding: 0;
-    margin-top: 10px;
+    margin-top: 13px;
     margin-left: 47px;
     margin-right: 53px;
     order: -1;
@@ -233,5 +233,13 @@
 
   .weekly-good__title {
     @include font-set(53px, 57px, 700);
+  }
+
+  .weekly-good__button {
+    padding: 14px 101px;
+  }
+
+  .weekly-good__price {
+    margin-left: 74px;
   }
 }

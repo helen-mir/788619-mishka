@@ -142,7 +142,7 @@
 
   .production__text {
     margin-top: 7px;
-    margin-bottom: 38px;
+    margin-bottom: 35px;
 
     @include font-set(15px, 30px, 400);
   }
@@ -193,6 +193,7 @@
     padding-left: 43px;
     padding-right: 43px;
     margin-bottom: 59px;
+    margin-left: 4px;
   }
 
   .production__title::before {

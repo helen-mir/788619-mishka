@@ -38,8 +38,8 @@
 }
 
 .modal_button {
-  padding-left: 82px;
-  padding-right: 82px;
+  padding-left: 86px;
+  padding-right: 86px;
   color: $white;
   background-color: $primary-color;
   border: 2px solid $primary-color;
@@ -52,7 +52,6 @@
 .choose-size__label-radio {
   display: block;
   padding: 20px 35px;
-  margin-right: 7px;
 
   @include font-set(17px, 16px, 700);
 
@@ -74,8 +73,8 @@
   }
 }
 
-.choose-size__label-radio:last-child {
-  margin-right: 0;
+.choose-size__item:not(:nth-child(3n)) {
+  margin-right: 7px;
 }
 
 .overlay {
@@ -107,7 +106,7 @@
   }
 
   .modal_button {
-    padding-left: 126px;
-    padding-right: 126px;
+    padding-left: 130px;
+    padding-right: 131px;
   }
 }

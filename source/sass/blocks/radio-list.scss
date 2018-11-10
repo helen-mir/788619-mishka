@@ -72,6 +72,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .radio-list__item {
+    margin-bottom: 58px;
+  }
+
   .radio-list__label {
     padding-left: 87px;
 

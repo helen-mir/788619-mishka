@@ -282,6 +282,8 @@
   .order-form__tel,
   .order-form__textarea {
     width: 700px;
+    padding-left: 18px;
+    padding-right: 18px;
   }
 
   .order-form__tel {
@@ -342,6 +344,11 @@
     &--contacts {
       padding-top: 62px;
       padding-bottom: 0;
+    }
+
+    &--type {
+      padding-top: 50px;
+      margin-bottom: 11px;
     }
   }
 

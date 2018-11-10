@@ -83,16 +83,12 @@
 
 @media (min-width: $desktop-width) {
   .checkbox-list {
-    width: 720px;
+    width: 735px;
     padding-left: 8px;
   }
 
   .checkbox-list__item {
-    width: 185px;
-  }
-
-  .checkbox-list__item:not(:nth-child(3n)) {
-    margin-right: 78px;
+    width: 201px;
   }
 
   .checkbox-list__input {

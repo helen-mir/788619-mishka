@@ -126,8 +126,15 @@
     }
   }
 
-  .category__item--kids-toys:hover {
-    box-shadow: 0 5px 0 0 $primary-color--darkest;
+  .category__item--kids-toys {
+    &::after {
+      top: 27px;
+      right: 34px;
+    }
+
+    &:hover {
+      box-shadow: 0 5px 0 0 $primary-color--darkest;
+    }
   }
 
   .category__link:active {

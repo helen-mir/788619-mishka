@@ -14,7 +14,7 @@
 
 @media (min-width: $tablet-width) {
   .page-footer {
-    padding-top: 51px;
+    padding-top: 44px;
     padding-bottom: 58px;
   }
 
@@ -45,9 +45,12 @@
     @include wrapper-tablet;
   }
 
-  .page-footer__social,
-  .page-footer__copyright {
+  .page-footer__social {
     width: 190px;
+  }
+
+  .page-footer__copyright {
+    width: 186px;
   }
 }
 
