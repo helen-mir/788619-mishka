@@ -90,7 +90,7 @@
 
 @media (min-width: $tablet-width) {
   .catalog {
-    padding-top: 80px;
+    padding-top: 69px;
   }
 
   .catalog__list {
@@ -100,7 +100,7 @@
   .catalog-item {
     display: flex;
     width: 668px;
-    margin-bottom: 53px;
+    margin-bottom: 49px;
   }
 
   .catalog-item__info {
@@ -109,7 +109,7 @@
     justify-content: space-between;
     align-content: center;
     width: 50%;
-    padding-top: 27px;
+    padding-top: 26px;
   }
 
   .catalog-item__title {
@@ -153,6 +153,7 @@
     flex-direction: column;
     flex-wrap: wrap;
     width: 315px;
+    margin-bottom: 38px;
   }
 
   .catalog__item:not(:nth-child(3n)) {

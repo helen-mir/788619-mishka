@@ -49,12 +49,13 @@
 @media (min-width: $tablet-width) {
   .checkbox-list {
     display: flex;
+    justify-content: space-between;
     flex-wrap: wrap;
     width: 501px;
   }
 
   .checkbox-list__item {
-    width: 250px;
+    width: 237px;
     margin-bottom: 61px;
   }
 
@@ -64,9 +65,18 @@
     @include font-set(19px, 18px, 700);
 
     &::before {
-      top: -9px;
+      top: -12px;
       width: 52px;
       height: 52px;
+    }
+  }
+
+  .checkbox-list__input {
+    &:checked + .checkbox-list__label::after {
+      top: 0;
+      left: 11px;
+      width: 30px;
+      height: 16px;
     }
   }
 }
@@ -74,7 +84,7 @@
 @media (min-width: $desktop-width) {
   .checkbox-list {
     width: 720px;
-    padding-left: 9px;
+    padding-left: 8px;
   }
 
   .checkbox-list__item {
@@ -87,8 +97,8 @@
 
   .checkbox-list__input {
     &:checked + .checkbox-list__label::after {
-      top: 5px;
-      left: 15px;
+      top: 3px;
+      left: 13px;
     }
   }
 }

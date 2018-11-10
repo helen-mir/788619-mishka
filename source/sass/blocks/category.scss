@@ -95,8 +95,7 @@
 
   .category__item {
     width: 334px;
-    padding-top: 29px;
-    padding-bottom: 39px;
+    padding: 25px 34px 39px;
   }
 
   .category__link {
@@ -107,7 +106,6 @@
 @media (min-width: $desktop-width) {
   .zigzag::after {
     bottom: -17px;
-    left: 18px;
     height: 34px;
   }
 

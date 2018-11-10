@@ -3,7 +3,7 @@
   justify-content: space-between;
   align-items: center;
   width: 182px;
-  padding-top: 23px;
+  padding-top: 14px;
   margin: 0 auto;
 
   text-align: center;
@@ -20,12 +20,10 @@
 }
 
 .copyright__link {
-  position: relative;
   width: 27px;
 }
 
 .icon--htmlacademy {
-  position: absolute;
   top: -15px;
   right: 0;
   fill: $primary-color;
@@ -36,7 +34,7 @@
   }
 
   &:active {
-    fill: #dcf5f0;
+    fill: #bde3dd;
   }
 }
 

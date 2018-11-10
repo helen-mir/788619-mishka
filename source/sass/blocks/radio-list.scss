@@ -51,7 +51,7 @@
     @include font-set(19px, 18px, 700);
 
     &::before {
-      top: -23px;
+      top: -20px;
       width: 52px;
       height: 52px;
     }
@@ -67,7 +67,7 @@
   }
 
   .radio-list__item {
-    margin-bottom: 52px;
+    margin-bottom: 55px;
   }
 }
 
@@ -77,13 +77,13 @@
 
     &::before {
       left: 8px;
-      top: -20px;
+      top: -17px;
     }
   }
 
   .radio-list__input {
     &:checked + .radio-list__label::after {
-      top: -4px;
+      top: -2px;
       left: 23px;
     }
   }

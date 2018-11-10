@@ -73,7 +73,8 @@ gulp.task("js", function () {
     .pipe(rename({
       suffix: ".min"
     }))
-    .pipe(gulp.dest("build/js"));
+    .pipe(gulp.dest("build/js"))
+    .pipe(server.stream());
 });
 
 gulp.task("server", function () {

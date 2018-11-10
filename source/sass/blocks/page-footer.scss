@@ -19,14 +19,12 @@
   }
 
   .page-footer__logo {
-    position: relative;
     display: block;
     width: 105px;
     font-size: 0;
   }
 
   .icon--logo-footer {
-    position: absolute;
     fill: #231f20;
 
     &:hover,
@@ -35,7 +33,7 @@
     }
 
     &:active {
-      fill: #dcf5f0;
+      fill: #bde3dd;
     }
   }
 

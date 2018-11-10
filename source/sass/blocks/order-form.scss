@@ -10,11 +10,11 @@
   border: none;
 
   &--color {
-    margin-bottom: 0;
+    margin-bottom: -2px;
   }
 
   &--name {
-    margin-bottom: 16px;
+    margin-bottom: 12px;
   }
 
   &--text {
@@ -38,7 +38,7 @@
 
   &::after {
     content: "";
-    width: 200px;
+    width: 175px;
     height: 1px;
     margin-left: 25px;
     flex-grow: 1;
@@ -54,7 +54,7 @@
   }
 
   &--email {
-    margin-bottom: 23px;
+    margin-bottom: 13px;
   }
 
   &--textarea {
@@ -97,14 +97,15 @@
 
 .order-form__tel {
   position: relative;
-  margin-bottom: 20px;
-  height: 39px;
+  margin-bottom: 36px;
+  height: 42px;
 
   @include font-set(19px, 18px, 400);
 }
 
 .order-form__email {
   margin-bottom: 15px;
+  height: 44px;
 }
 
 .order-form__tel::placeholder,
@@ -158,8 +159,8 @@
 .icon--phone,
 .icon--mail {
   position: absolute;
-  top: -3px;
-  right: 12px;
+  top: 1px;
+  right: 6px;
   fill: #d3d2d2;
 
 
@@ -179,15 +180,27 @@
 
     &--color {
       padding-top: 60px;
+      margin-bottom: 0;
     }
 
     &--name {
       margin-bottom: 0;
       padding-top: 66px;
+      padding-bottom: 10px;
     }
 
     &--text {
+      padding-top: 56px;
+    }
+
+    &--type {
       padding-top: 52px;
+    }
+
+    &--contacts {
+      padding-top: 68px;
+      padding-bottom: 8px;
+      margin-bottom: 0;
     }
 
     &:nth-child(2n) {
@@ -204,6 +217,14 @@
   .order-form__title {
     display: block;
     width: 166px;
+
+    &--email {
+      margin-top: 8px;
+    }
+
+    &--textarea {
+      margin-top: 12px;
+    }
   }
 
   .order-form__title::after {
@@ -219,7 +240,8 @@
   }
 
   .order-form__tel {
-    height: 44px;
+    height: 39px;
+    margin-bottom: 27px;
   }
 
   .order-form__textarea {
@@ -239,6 +261,7 @@
 
   .order-form__button {
     margin: 0;
+    padding-top: 15px;
     padding-left: 30px;
     padding-right: 30px;
     order: -1;
@@ -267,22 +290,26 @@
 
   .order-form__textarea {
     margin-left: 8px;
+
+    @include font-set(19px, 18px, 400);
   }
 
   .order-form__email {
     margin-bottom: 53px;
+
+    @include font-set(19px, 18px, 400);
   }
 
   .order-form__title {
-    padding-top: 18px;
+    padding-top: 0;
     padding-left: 60px;
 
     &--text {
-      padding-top: 10px;
+      padding-top: 5px;
     }
 
     &--textarea {
-      padding-top: 17px;
+      padding-top: 6px;
     }
 
     &--name {
@@ -293,7 +320,8 @@
   .order-form__footer {
     width: 700px;
     padding: 0;
-    margin-top: 48px;
+    margin-top: 50px;
+    margin-bottom: 50px;
   }
 
   .order-form__group {
@@ -303,12 +331,17 @@
     }
 
     &--text {
-      padding-top: 35px;
+      padding-top: 46px;
     }
 
     &--name {
-      padding-top: 62px;
+      padding-top: 59px;
       padding-bottom: 17px;
+    }
+
+    &--contacts {
+      padding-top: 62px;
+      padding-bottom: 0;
     }
   }
 
@@ -317,6 +350,6 @@
   }
 
   .order-form__wrapper--tel {
-    margin-bottom: 18px;
+    margin-bottom: 8px;
   }
 }

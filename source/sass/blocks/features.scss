@@ -144,6 +144,10 @@
 
   .features__item--handmade {
     order: 1;
+
+    &::before {
+      background-position: 5px 8px;
+    }
   }
 
   .features__item--scandinavian-style {
@@ -152,6 +156,10 @@
 
   .features__item--support {
     order: 3;
+
+    &::before {
+      background-position: 0 5px;
+    }
   }
 
   .features__item--increases-like {
@@ -160,6 +168,10 @@
 
   .features__item--gift-wrap {
     order: 5;
+
+    &::before {
+      background-position: 4px 4px;
+    }
   }
 }
 
@@ -190,5 +202,11 @@
     &::before {
       top: 15px;
     }
+  }
+
+  .features__item--increases-like::before {
+    width: 36px;
+    height: 34px;
+    background-position: 3px 6px;
   }
 }
