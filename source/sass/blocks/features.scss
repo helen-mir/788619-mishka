@@ -17,7 +17,7 @@
 .features__item {
   position: relative;
   padding-top: 58px;
-  padding-bottom: 54px;
+  padding-bottom: 30px;
 
   @include font-set(17px, 20px, 700);
 }
@@ -146,7 +146,8 @@
     order: 1;
 
     &::before {
-      background-position: 5px 8px;
+      top: 5px;
+      left: 2px;
     }
   }
 
@@ -158,19 +159,24 @@
     order: 3;
 
     &::before {
-      background-position: 0 5px;
+      top: 9px;
     }
   }
 
   .features__item--increases-like {
     order: 4;
+
+    &::before {
+      top: 8px;
+    }
   }
 
   .features__item--gift-wrap {
     order: 5;
 
     &::before {
-      background-position: 4px 4px;
+      top: 2px;
+      left: 2px;
     }
   }
 }
@@ -184,6 +190,7 @@
   }
 
   .features__title {
+    margin-left: -4px;
     margin-bottom: 32px;
 
     @include font-set(53px, 57px, 700);

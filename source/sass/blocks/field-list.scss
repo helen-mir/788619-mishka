@@ -30,7 +30,10 @@
   }
 }
 
-.field-list__input::placeholder,
+.field-list__input::placeholder {
+  color: rgba(68, 68, 68, 0.3);
+}
+
 .field-list__input:-ms-input-placeholder {
   color: rgba(68, 68, 68, 0.3);
 }
