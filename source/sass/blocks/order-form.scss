@@ -114,6 +114,13 @@
   color: rgba(68, 68, 68, 0.3);
 }
 
+.order-form__tel:-ms-input-placeholder,
+.order-form__email:-ms-input-placeholder,
+.order-form__textarea:-ms-input-placeholder {
+  color: rgba(68, 68, 68, 0.3);
+}
+
+
 .order-form__textarea {
   height: 140px;
   padding-top: 17px;
@@ -267,6 +274,7 @@
   }
 
   .order-form__button {
+    width: auto;
     margin: 0;
     padding-top: 12px;
     padding-left: 30px;
