@@ -14,14 +14,15 @@
 .main-nav__item {
   min-height: 79px;
   padding-top: 28px;
-  padding-left: 75px;
   padding-bottom: 26px;
+  padding-left: 75px;
 
   @include font-set(17px, 24px, 700);
 
   border-bottom: 1px solid #ececec;
 
   &--logo {
+    padding-left: 0;
     padding-top: 21px;
     padding-bottom: 19px;
 
@@ -60,9 +61,9 @@
   }
 
   &--logo {
-    margin-left: 40px;
     padding: 0;
     width: 86px;
+    margin: 0 auto;
   }
 }
 
