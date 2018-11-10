@@ -168,7 +168,7 @@
 .icon--mail {
   position: absolute;
   top: 1px;
-  right: 6px;
+  right: 19px;
   fill: #d3d2d2;
 
 
@@ -377,5 +377,10 @@
 
   .order-form__button {
     padding-top: 15px;
+  }
+
+  .icon--phone,
+  .icon--mail {
+    right: 6px;
   }
 }
