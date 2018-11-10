@@ -15,12 +15,14 @@
   min-height: 79px;
   padding-top: 28px;
   padding-bottom: 26px;
+  padding-left: 75px;
 
   @include font-set(17px, 24px, 700);
 
   border-bottom: 1px solid #ececec;
 
   &--logo {
+    padding-left: 0;
     padding-top: 21px;
     padding-bottom: 19px;
 
@@ -45,11 +47,9 @@
 }
 
 .main-nav__link {
-  width: 182px;
   position: relative;
   display: block;
   color: $black;
-  margin: 0 auto;
 
   &:hover,
   &:focus {
@@ -63,6 +63,7 @@
   &--logo {
     padding: 0;
     width: 86px;
+    margin: 0 auto;
   }
 }
 
