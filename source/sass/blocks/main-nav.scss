@@ -14,7 +14,6 @@
 .main-nav__item {
   min-height: 79px;
   padding-top: 28px;
-  padding-left: 75px;
   padding-bottom: 26px;
 
   @include font-set(17px, 24px, 700);
@@ -46,9 +45,11 @@
 }
 
 .main-nav__link {
+  width: 182px;
   position: relative;
   display: block;
   color: $black;
+  margin: 0 auto;
 
   &:hover,
   &:focus {
@@ -60,7 +61,6 @@
   }
 
   &--logo {
-    margin-left: 40px;
     padding: 0;
     width: 86px;
   }
