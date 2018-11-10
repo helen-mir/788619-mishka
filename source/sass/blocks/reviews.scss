@@ -1,6 +1,6 @@
 .reviews {
   padding-top: 24px;
-  padding-bottom: 71px;
+  padding-bottom: 69px;
 }
 
 .reviews__wrapper {
@@ -30,7 +30,7 @@
 
 .author__name {
   display: block;
-  margin-bottom: 8px;
+  margin-bottom: 6px;
 
   @include font-set(17px, 24px, 700);
 
@@ -117,7 +117,7 @@
 
 @media (min-width: $tablet-width) {
   .reviews {
-    padding-top: 75px;
+    padding-top: 81px;
     padding-bottom: 25px;
 
     background-image: url("../img/review@1x.jpg");
@@ -153,13 +153,13 @@
 
   .reviews__title {
     order: -2;
-    margin-bottom: 51px;
+    margin-bottom: 49px;
 
     @include font-set(43px, 50px, 700);
   }
 
   .reviews__text {
-    margin-bottom: 59px;
+    margin-bottom: 58px;
 
     @include font-set(17px, 30px, 400);
   }
@@ -216,12 +216,13 @@
 
   .reviews__text {
     padding-right: 75px;
-    padding-bottom: 41px;
+    padding-bottom: 40px;
     margin-bottom: 0;
   }
 
   .slider__button {
     width: 87.5px;
+    margin-top: 10px;
   }
 
   .author__name {

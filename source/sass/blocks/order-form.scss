@@ -6,15 +6,15 @@
 .order-form__group {
   padding: 0;
   margin: 0;
-  margin-bottom: 17px;
+  margin-bottom: 22px;
   border: none;
 
   &--color {
-    margin-bottom: -2px;
+    margin-bottom: -3px;
   }
 
   &--name {
-    margin-bottom: 12px;
+    margin-bottom: 9px;
   }
 
   &--text {
@@ -46,7 +46,7 @@
   }
 
   &--name {
-    margin-bottom: 31px;
+    margin-bottom: 30px;
   }
 
   &--text {
@@ -54,11 +54,11 @@
   }
 
   &--email {
-    margin-bottom: 13px;
+    margin-bottom: 14px;
   }
 
   &--textarea {
-    margin-bottom: 28px;
+    margin-bottom: 23px;
   }
 }
 
@@ -105,7 +105,7 @@
 
 .order-form__email {
   margin-bottom: 15px;
-  height: 44px;
+  height: 42px;
 }
 
 .order-form__tel::placeholder,
@@ -179,27 +179,29 @@
     padding-top: 54px;
 
     &--color {
-      padding-top: 60px;
+      padding-top: 63px;
+      padding-bottom: 7px;
       margin-bottom: 0;
     }
 
     &--name {
       margin-bottom: 0;
-      padding-top: 66px;
+      padding-top: 64px;
       padding-bottom: 10px;
     }
 
     &--text {
-      padding-top: 56px;
+      padding-top: 49px;
     }
 
     &--type {
       padding-top: 52px;
+      margin-bottom: 16px;
     }
 
     &--contacts {
       padding-top: 68px;
-      padding-bottom: 8px;
+      padding-bottom: 14px;
       margin-bottom: 0;
     }
 
@@ -223,7 +225,11 @@
     }
 
     &--textarea {
-      margin-top: 12px;
+      margin-top: 13px;
+    }
+
+    &--name {
+      margin-top: 5px;
     }
   }
 
@@ -241,7 +247,7 @@
 
   .order-form__tel {
     height: 39px;
-    margin-bottom: 27px;
+    margin-bottom: 31px;
   }
 
   .order-form__textarea {
@@ -255,13 +261,13 @@
 
     @include wrapper-tablet;
 
-    margin-top: 49px;
-    margin-bottom: 54px;
+    margin-top: 54px;
+    margin-bottom: 51px;
   }
 
   .order-form__button {
     margin: 0;
-    padding-top: 15px;
+    padding-top: 12px;
     padding-left: 30px;
     padding-right: 30px;
     order: -1;
@@ -323,7 +329,7 @@
     width: 700px;
     padding: 0;
     margin-top: 50px;
-    margin-bottom: 50px;
+    margin-bottom: 48px;
   }
 
   .order-form__group {
@@ -333,7 +339,7 @@
     }
 
     &--text {
-      padding-top: 46px;
+      padding-top: 49px;
     }
 
     &--name {
@@ -358,5 +364,9 @@
 
   .order-form__wrapper--tel {
     margin-bottom: 8px;
+  }
+
+  .order-form__button {
+    padding-top: 15px;
   }
 }

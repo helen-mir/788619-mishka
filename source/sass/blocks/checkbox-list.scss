@@ -56,7 +56,7 @@
 
   .checkbox-list__item {
     width: 237px;
-    margin-bottom: 61px;
+    margin-bottom: 58px;
   }
 
   .checkbox-list__label {
@@ -73,8 +73,8 @@
 
   .checkbox-list__input {
     &:checked + .checkbox-list__label::after {
-      top: 0;
-      left: 11px;
+      top: 3px;
+      left: 14px;
       width: 30px;
       height: 16px;
     }

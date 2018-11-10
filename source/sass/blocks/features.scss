@@ -17,7 +17,7 @@
 .features__item {
   position: relative;
   padding-top: 58px;
-  padding-bottom: 32px;
+  padding-bottom: 54px;
 
   @include font-set(17px, 20px, 700);
 }
@@ -113,7 +113,7 @@
   .features__wrapper {
     @include wrapper-tablet;
 
-    padding-bottom: 26px;
+    padding-bottom: 25px;
   }
 
   .features__title {
@@ -180,7 +180,7 @@
     max-width: 1150px;
     padding: 0 225px;
 
-    padding-bottom: 48px;
+    padding-bottom: 46px;
   }
 
   .features__title {

@@ -15,7 +15,7 @@
   background-color: #f1f1f1;
 
   &--index {
-    min-height: 284px;
+    min-height: 281px;
     background-color: #f9f9f9;
     background-image: url("../img/hero-mobile@1x.jpg");
     background-repeat: no-repeat;
@@ -55,7 +55,7 @@
     border-top: 1px solid #e7e7e7;
 
     &--index {
-      min-height: 627px;
+      min-height: 625px;
       background-image: url("../img/hero-tablet@1x.jpg");
       background-repeat: no-repeat;
       background-position: top;
@@ -70,13 +70,17 @@
   .page-header__title {
     @include wrapper-tablet;
 
-    padding-top: 58px;
+    padding-top: 55px;
     padding-bottom: 86px;
 
     @include font-set(43px, 50px, 700);
 
     &--index {
-      padding-top: 112px;
+      padding-top: 110px;
+    }
+
+    &--form {
+      padding-top: 52px;
     }
   }
 

@@ -73,6 +73,10 @@
   }
 }
 
+.choose-size__radio:checked + label {
+  border-color: $primary-color;
+}
+
 .choose-size__item:not(:nth-child(3n)) {
   margin-right: 7px;
 }

@@ -3,7 +3,9 @@
 }
 
 .production__wrapper {
-  @include wrapper;
+  padding: 0;
+  margin: 0 auto;
+  width: 260px;
 
   border: 1px solid #ededed;
 
@@ -18,10 +20,10 @@
 }
 
 .production__wrapper-title {
-  padding-top: 29px;
+  padding-top: 24px;
   padding-right: 23px;
-  padding-left: 91px;
-  padding-bottom: 26px;
+  padding-left: 90px;
+  padding-bottom: 23px;
 }
 
 .production__title {
@@ -47,7 +49,7 @@
 .production__text {
   display: block;
   margin-top: 0;
-  margin-bottom: 29px;
+  margin-bottom: 25px;
 
   @include font-set(13px, 24px, 400);
 }
@@ -109,7 +111,7 @@
 
 @media (min-width: $tablet-width) {
   .production {
-    padding-bottom: 110px;
+    padding-bottom: 107px;
   }
 
   .production__wrapper {
@@ -141,7 +143,7 @@
   }
 
   .production__text {
-    margin-top: 7px;
+    margin-top: 11px;
     margin-bottom: 35px;
 
     @include font-set(15px, 30px, 400);
@@ -158,7 +160,7 @@
 
 @media (min-width: $desktop-width) {
   .production {
-    padding-bottom: 106px;
+    padding-bottom: 103px;
   }
 
   .production__wrapper {
@@ -186,7 +188,7 @@
   .production__wrapper-title {
     padding-top: 97px;
     padding-right: 140px;
-    padding-bottom: 31px;
+    padding-bottom: 33px;
   }
 
   .production__button {
@@ -197,8 +199,8 @@
   }
 
   .production__title::before {
-    bottom: 71px;
-    left: 0;
+    bottom: 76px;
+    left: 3px;
   }
 
   .production__text {

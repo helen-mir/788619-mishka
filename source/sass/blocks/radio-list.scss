@@ -1,5 +1,5 @@
 .radio-list__item {
-  margin-bottom: 29px;
+  margin-bottom: 23px;
 }
 
 .radio-list__label {
@@ -51,7 +51,7 @@
     @include font-set(19px, 18px, 700);
 
     &::before {
-      top: -20px;
+      top: -16px;
       width: 52px;
       height: 52px;
     }
@@ -59,7 +59,7 @@
 
   .radio-list__input {
     &:checked + .radio-list__label::after {
-      top: -6px;
+      top: -2px;
       left: 16px;
       width: 20px;
       height: 20px;

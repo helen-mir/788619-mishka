@@ -9,7 +9,7 @@
 
 .catalog-item {
   width: 260px;
-  margin-bottom: 28px;
+  margin-bottom: 29px;
 
   border: 1px solid #ededed;
 }
@@ -29,7 +29,7 @@
 
 .catalog-item__title {
   margin: 0;
-  margin-bottom: 9px;
+  margin-bottom: 7px;
 }
 
 .catalog-item__title-link {
@@ -169,5 +169,9 @@
 
   .catalog-item__header {
     padding-bottom: 13px;
+  }
+
+  .catalog-item__title {
+    margin-bottom: 4px;
   }
 }
