@@ -9,6 +9,7 @@
 
 .catalog-item {
   width: 260px;
+  margin: 0 auto;
   margin-bottom: 29px;
 
   border: 1px solid #ededed;
@@ -55,7 +56,6 @@
 .catalog-item__price {
   position: relative;
   margin: 0;
-  padding-top: 22px;
 
   @include font-set(15px, 24px, 700);
 }
@@ -64,18 +64,17 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-top: 22px;
 
   border-top: 1px solid #ececec;
 }
 
 .catalog-item__add {
-  position: relative;
+  width: 20px;
+  height: 19px;
 }
 
 .icon--cart-catalog {
-  position: absolute;
-  top: 1px;
-  right: 0;
   fill: #d3d2d2;
 
   &:hover,
@@ -162,7 +161,7 @@
 
   .catalog-item__info {
     flex-grow: 1;
-    width: auto;
+    width: 100%;
     padding-top: 22px;
     padding-bottom: 27px;
   }

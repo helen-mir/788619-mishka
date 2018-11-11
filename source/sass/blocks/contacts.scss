@@ -89,10 +89,13 @@
 }
 
 .contacts__button {
+  display: block;
+  width: 260px;
   padding-top: 15px;
   padding-left: 51px;
   padding-right: 56px;
-  margin: 0 auto 40px;
+  margin: 0 auto;
+  margin-bottom: 40px;
 
   &:hover,
   &:focus {
@@ -152,7 +155,6 @@
   }
 
   .contacts__button {
-    display: block;
     width: 230px;
     margin: 56px auto 58px;
     padding-top: 14px;

@@ -168,7 +168,7 @@
 .icon--mail {
   position: absolute;
   top: 1px;
-  right: 19px;
+  right: 6px;
   fill: #d3d2d2;
 
 
@@ -284,6 +284,11 @@
 
   .order-form__text {
     @include font-set(17px, 30px, 400);
+  }
+
+  .icon--phone,
+  .icon--mail {
+    right: 19px;
   }
 }
 
