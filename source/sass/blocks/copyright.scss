@@ -23,39 +23,9 @@
   width: 38px;
 }
 
-.icon--htmlacademy {
-  top: -15px;
-  right: 0;
-  fill: $primary-color;
-  width: 41px;
-  height: 50px;
-
-  &:hover,
-  &:focus {
-    fill: #46c1ae;
-  }
-
-  &:active {
-    fill: #bde3dd;
-  }
-}
-
 @media (min-width: $tablet-width) {
   .copyright {
     margin: 0;
     padding: 0;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .copyright__icon path {
-    &:hover,
-    &:focus {
-      fill: #46c1ae;
-    }
-
-    &:active {
-      fill: #bde3dd;
-    }
   }
 }

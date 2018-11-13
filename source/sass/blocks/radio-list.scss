@@ -5,6 +5,7 @@
 .radio-list__label {
   position: relative;
   display: block;
+  width: 227px;
   padding-left: 62px;
 
   @include font-set(17px, 18px, 700);
@@ -46,6 +47,7 @@
 
 @media (min-width: $tablet-width) {
   .radio-list__label {
+    width: 100%;
     padding-left: 83px;
 
     @include font-set(19px, 18px, 700);

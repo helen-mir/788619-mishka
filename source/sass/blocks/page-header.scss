@@ -83,22 +83,6 @@
       padding-top: 52px;
     }
   }
-
-  .zigzag {
-    position: relative;
-
-    &::after {
-      content: "";
-      position: absolute;
-      bottom: -12px;
-      left: 0;
-      width: 100%;
-      height: 21px;
-      background-image: url("../img/bg-zigzag-fill.svg");
-      background-size: auto 100%;
-      background-position-x: center;
-    }
-  }
 }
 
 @media (min-width: $desktop-width) {
@@ -135,10 +119,5 @@
 
   .page-header__info {
     @include wrapper-desktop;
-  }
-
-  .zigzag::after {
-    bottom: -17px;
-    height: 34px;
   }
 }

@@ -24,19 +24,6 @@
     font-size: 0;
   }
 
-  .icon--logo-footer {
-    fill: #231f20;
-
-    &:hover,
-    &:focus {
-      fill: $primary-color;
-    }
-
-    &:active {
-      fill: #bde3dd;
-    }
-  }
-
   .page-footer__wrapper {
     display: flex;
     justify-content: space-between;

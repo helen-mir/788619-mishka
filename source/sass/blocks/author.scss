@@ -1,0 +1,29 @@
+.author__name {
+  display: block;
+  margin-bottom: 6px;
+
+  @include font-set(17px, 24px, 700);
+
+  font-style: normal;
+}
+
+.author__link {
+  display: block;
+  margin-bottom: 32px;
+  color: $secondary-color--darkest;
+  font-style: normal;
+
+  @include font-set(17px, 24px, 400);
+}
+
+@media (min-width: $tablet-width) {
+  .author__name {
+    @include font-set(18px, 24px, 700);
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .author__name {
+    font-size: 17px;
+  }
+}

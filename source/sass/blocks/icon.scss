@@ -1,0 +1,118 @@
+.icon--cart-catalog {
+  fill: #d3d2d2;
+
+  &:hover,
+  &:focus {
+    fill: $primary-color;
+  }
+
+  &:active {
+    fill: #dcf5f0;
+  }
+}
+
+.icon--htmlacademy {
+  top: -15px;
+  right: 0;
+  fill: $primary-color;
+  width: 41px;
+  height: 50px;
+
+  &:hover,
+  &:focus {
+    fill: #46c1ae;
+  }
+
+  &:active {
+    fill: #bde3dd;
+  }
+}
+
+.icon--search,
+.icon--cart {
+  position: absolute;
+  fill: #d3d2d2;
+  top: 2px;
+  left: -44px;
+
+  &:hover,
+  &:focus {
+    fill: $primary-color;
+  }
+
+  &:active {
+    fill: #dcf5f0;
+  }
+}
+
+.icon--phone,
+.icon--mail {
+  position: absolute;
+  top: 1px;
+  right: 6px;
+  fill: #d3d2d2;
+
+
+  &:hover,
+  &:focus {
+    fill: $primary-color;
+  }
+
+  &:active {
+    fill: $primary-color;
+  }
+}
+
+.icon--logo-footer {
+  fill: #231f20;
+
+  &:hover,
+  &:focus {
+    fill: $primary-color;
+  }
+
+  &:active {
+    fill: #bde3dd;
+  }
+}
+
+.icon--insta,
+.icon--fb,
+.icon--twitter {
+  fill: #221f1f;
+
+  &:hover,
+  &:focus {
+    fill: $primary-color;
+  }
+
+  &:active {
+    fill: #bde3dd;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .icon--cart {
+    left: -50px;
+  }
+
+  .icon--search {
+    left: 32px;
+  }
+
+  .icon--phone,
+  .icon--mail {
+    right: 19px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .icon--cart {
+    left: -50px;
+  }
+
+  .icon--phone,
+  .icon--mail {
+    right: 6px;
+  }
+}

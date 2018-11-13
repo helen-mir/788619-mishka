@@ -14,21 +14,6 @@
   @include lists;
 }
 
-.icon--insta,
-.icon--fb,
-.icon--twitter {
-  fill: #221f1f;
-
-  &:hover,
-  &:focus {
-    fill: $primary-color;
-  }
-
-  &:active {
-    fill: #bde3dd;
-  }
-}
-
 @media (min-width: $tablet-width) {
   .social {
     margin: 0;

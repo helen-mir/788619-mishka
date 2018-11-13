@@ -111,7 +111,7 @@
 
 @media (min-width: $tablet-width) {
   .production {
-    padding-bottom: 107px;
+    padding-bottom: 64px;
   }
 
   .production__wrapper {
@@ -150,7 +150,7 @@
   }
 
   .production__footer {
-    padding: 0 44px;
+    padding: 0 44px 44px;
   }
 
   .production__button-play {
@@ -160,7 +160,7 @@
 
 @media (min-width: $desktop-width) {
   .production {
-    padding-bottom: 103px;
+    padding-bottom: 105px;
   }
 
   .production__wrapper {
@@ -183,6 +183,7 @@
 
   .production__footer {
     padding-right: 60px;
+    padding-bottom: 0;
   }
 
   .production__wrapper-title {
@@ -194,7 +195,7 @@
   .production__button {
     padding-left: 43px;
     padding-right: 43px;
-    margin-bottom: 59px;
+    margin-bottom: 57px;
     margin-left: 4px;
   }
 

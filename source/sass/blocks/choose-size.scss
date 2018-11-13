@@ -1,0 +1,37 @@
+.choose-size__label-radio {
+  display: block;
+  padding: 20px 35px;
+
+  @include font-set(17px, 16px, 700);
+
+  text-transform: uppercase;
+  color: $secondary-color--darkest;
+  border: 2px solid #ececec;
+
+  &--active {
+    border-color: $primary-color;
+  }
+
+  &:hover,
+  &:focus {
+    border-color: #c7c7c7;
+  }
+
+  &:active {
+    border-color: $primary-color;
+  }
+}
+
+.choose-size__radio:checked + label {
+  border-color: $primary-color;
+}
+
+.choose-size__item:not(:nth-child(3n)) {
+  margin-right: 7px;
+}
+
+@media (min-width: $tablet-width) {
+  .choose-size__label-radio {
+    padding: 20px 50px;
+  }
+}

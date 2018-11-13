@@ -28,24 +28,6 @@
   @include font-set(25px, 30px, 700);
 }
 
-.author__name {
-  display: block;
-  margin-bottom: 6px;
-
-  @include font-set(17px, 24px, 700);
-
-  font-style: normal;
-}
-
-.author__link {
-  display: block;
-  margin-bottom: 32px;
-  color: $secondary-color--darkest;
-  font-style: normal;
-
-  @include font-set(17px, 24px, 400);
-}
-
 .reviews__button {
   padding-top: 16px;
   padding-left: 80px;
@@ -78,42 +60,6 @@
 .review__autor {
   margin-bottom: 14px;
 }
-
-.slider__controls {
-  display: flex;
-  margin-bottom: 37px;
-}
-
-.slider__button {
-  width: 130px;
-  height: 50px;
-  background-color: $white;
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  text-indent: -10000px;
-  border: 1px solid #ececec;
-
-  &--prev {
-    background-image: url("../img/icon-left-arrow.svg");
-  }
-
-  &--next {
-    background-image: url("../img/icon-right-arrow.svg");
-  }
-}
-
-.slider__button--prev:hover,
-.slider__button--next:hover,
-.slider__button--prev:focus,
-.slider__button--next:focus {
-  opacity: 0.6;
-}
-
-.slider__button--prev:active,
-.slider__button--next:active {
-  opacity: 0.3;
-}
-
 
 @media (min-width: $tablet-width) {
   .reviews {
@@ -163,21 +109,6 @@
 
     @include font-set(17px, 30px, 400);
   }
-
-  .slider__controls {
-    margin: 0;
-    margin-left: auto;
-    margin-top: -81px;
-  }
-
-  .slider__button {
-    width: 84px;
-    border: none;
-  }
-
-  .author__name {
-    @include font-set(18px, 24px, 700);
-  }
 }
 
 @media (min-width: $desktop-width) {
@@ -218,14 +149,6 @@
     padding-right: 75px;
     padding-bottom: 40px;
     margin-bottom: 0;
-  }
-
-  .slider__button {
-    width: 87.5px;
-  }
-
-  .author__name {
-    font-size: 17px;
   }
 
   .reviews__button {

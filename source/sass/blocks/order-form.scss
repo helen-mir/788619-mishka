@@ -164,24 +164,6 @@
   margin: 0;
 }
 
-.icon--phone,
-.icon--mail {
-  position: absolute;
-  top: 1px;
-  right: 6px;
-  fill: #d3d2d2;
-
-
-  &:hover,
-  &:focus {
-    fill: $primary-color;
-  }
-
-  &:active {
-    fill: $primary-color;
-  }
-}
-
 @media (min-width: $tablet-width) {
   .order-form__group {
     padding-top: 54px;
@@ -285,11 +267,6 @@
   .order-form__text {
     @include font-set(17px, 30px, 400);
   }
-
-  .icon--phone,
-  .icon--mail {
-    right: 19px;
-  }
 }
 
 @media (min-width: $desktop-width) {
@@ -382,10 +359,5 @@
 
   .order-form__button {
     padding-top: 15px;
-  }
-
-  .icon--phone,
-  .icon--mail {
-    right: 6px;
   }
 }

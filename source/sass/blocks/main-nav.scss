@@ -67,23 +67,6 @@
   }
 }
 
-.icon--search,
-.icon--cart {
-  position: absolute;
-  fill: #d3d2d2;
-  top: 2px;
-  left: -44px;
-
-  &:hover,
-  &:focus {
-    fill: $primary-color;
-  }
-
-  &:active {
-    fill: #dcf5f0;
-  }
-}
-
 @media (max-width: $mobile-width-only) {
   .main-nav__toggle {
     position: absolute;
@@ -212,14 +195,6 @@
     width: 112px;
     height: 46px;
   }
-
-  .icon--cart {
-    left: -50px;
-  }
-
-  .icon--search {
-    left: 32px;
-  }
 }
 
 @media (min-width: $desktop-width) {
@@ -304,9 +279,5 @@
   .main-nav__logo-image {
     width: 149px;
     height: 73px;
-  }
-
-  .icon--cart {
-    left: -50px;
   }
 }

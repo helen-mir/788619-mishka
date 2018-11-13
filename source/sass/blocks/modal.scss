@@ -37,7 +37,7 @@
   margin-bottom: 32px;
 }
 
-.modal_button {
+.modal__button {
   padding-left: 86px;
   padding-right: 86px;
   color: $white;
@@ -46,53 +46,6 @@
 }
 
 .modal--show {
-  display: block;
-}
-
-.choose-size__label-radio {
-  display: block;
-  padding: 20px 35px;
-
-  @include font-set(17px, 16px, 700);
-
-  text-transform: uppercase;
-  color: $secondary-color--darkest;
-  border: 2px solid #ececec;
-
-  &--active {
-    border-color: $primary-color;
-  }
-
-  &:hover,
-  &:focus {
-    border-color: #c7c7c7;
-  }
-
-  &:active {
-    border-color: $primary-color;
-  }
-}
-
-.choose-size__radio:checked + label {
-  border-color: $primary-color;
-}
-
-.choose-size__item:not(:nth-child(3n)) {
-  margin-right: 7px;
-}
-
-.overlay {
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 10;
-  background-color: rgba(255, 255, 255, 0.6);
-}
-
-.overlay--show {
   display: block;
 }
 
@@ -105,11 +58,7 @@
     @include font-set(17px, 30px, 400);
   }
 
-  .choose-size__label-radio {
-    padding: 20px 50px;
-  }
-
-  .modal_button {
+  .modal__button {
     padding-left: 130px;
     padding-right: 131px;
   }
